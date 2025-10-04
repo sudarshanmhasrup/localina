@@ -6,6 +6,9 @@ plugins {
     alias(libs.plugins.compose.compiler)
 }
 
+group = libs.versions.composeApp.group.get()
+version = libs.versions.composeApp.version.get()
+
 kotlin {
     jvm()
 
@@ -33,9 +36,6 @@ kotlin {
         }
     }
 }
-
-group = libs.versions.composeApp.group.get()
-version = libs.versions.composeApp.version.get()
 
 // Custom build directory
 layout.buildDirectory.set(file("$rootDir/.build/ComposeApp"))
