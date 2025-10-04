@@ -1,4 +1,4 @@
-package com.compose.app.presentation
+package com.compose.app.presentation.composeApp
 
 import com.compose.app.domain.model.Language
 
