@@ -114,3 +114,7 @@ LocaleUpdater.updateLocale(locale = "hi")
 | iOS      | `iosX64()`, `iosArm64()`, `iosSimulatorArm64()` |
 | Desktop  | `jvm()`                                         |
 | Web      | `wasmJs()`                                      |
+
+### Contributing
+
+Contributions are welcome! Please feel free to open an issue or submit a pull request.
