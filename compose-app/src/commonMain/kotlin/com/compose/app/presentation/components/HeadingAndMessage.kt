@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.compose.app.presentation.extensions.headingAndMessageModifier
+import com.compose.app.presentation.theme.ComposeAppTheme
 import com.compose.app.resources.Res
 import com.compose.app.resources.language_page_heading
 import com.compose.app.resources.language_page_message
@@ -41,7 +42,7 @@ internal fun HeadingAndMessage(
 
 @Composable
 private fun HeadingAndMessagePreview() {
-    MaterialTheme {
+    ComposeAppTheme {
         HeadingAndMessage(
             heading = Res.string.language_page_heading,
             message = Res.string.language_page_message,
