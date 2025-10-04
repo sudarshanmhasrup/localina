@@ -82,7 +82,7 @@ commonMain/composeResources/
 └── ... (other locale directories)
 ```
 
-#### Step 2: Wrap Your UI with LocalinaApp
+#### Step 2: Wrap Your UI with LocalinaApp Composable
 
 Wrap all your UI code inside the `LocalinaApp` composable, like this:
 
@@ -97,6 +97,12 @@ fun App() {
 
 #### Step 3: Update the Locale
 
+To change the language at runtime, simply call the updateLocale function with your desired locale code.
+
+```kotlin
+// Replace "hi" with your desired locale code.
+LocaleUpdater.updateLocale(locale = "hi")
+```
 
 ### Supported platforms
 
