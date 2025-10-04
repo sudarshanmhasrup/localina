@@ -2,6 +2,7 @@
 # Library and plugins versions
 kotlin = "2.2.20"
 composeMultiplatform = "1.9.0"
+viewmodel = "2.9.4"
 
 # library module's configuration and publishing information
 library-group = "io.github.sudarshanmhasrup.localina"
@@ -18,6 +19,7 @@ composeApp-androidLibrary-minSdk = "24"
 
 [libraries]
 compose-multiplatform-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "composeMultiplatform" }
+compose-multiplatform-viewmodel = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "viewmodel" }
 
 [plugins]
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
