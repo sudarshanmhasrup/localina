@@ -7,6 +7,7 @@ import platform.Foundation.NSLocale
 import platform.Foundation.NSUserDefaults
 import platform.Foundation.preferredLanguages
 
+@Suppress("EXPECT_ACTUAL_CLASSIFIERS_ARE_IN_BETA_WARNING")
 internal actual object LocalAppLocale {
     private const val LANG_KEY = "AppleLanguages"
     private val default = NSLocale.preferredLanguages.first() as String
