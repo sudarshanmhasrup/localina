@@ -82,6 +82,22 @@ commonMain/composeResources/
 └── ... (other locale directories)
 ```
 
+#### Step 2: Wrap Your UI with LocalinaApp
+
+Wrap all your UI code inside the `LocalinaApp` composable, like this:
+
+```kotlin
+@Composable
+fun App() {
+    LocalinaApp {
+        // Your UI code here
+    }
+}
+```
+
+#### Step 3: Update the Locale
+
+
 ### Supported platforms
 
 `Localina` supports all platforms that Compose Multiplatform supports. This includes:
