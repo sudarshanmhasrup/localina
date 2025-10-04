@@ -19,4 +19,4 @@ kotlin {
 }
 
 // Custom build directory
-layout.buildDirectory.set(file(".build/Library"))
+layout.buildDirectory.set(file("$rootDir/.build/Library"))
