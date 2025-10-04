@@ -33,6 +33,7 @@ kotlin {
         commonMain.dependencies {
             implementation(libs.compose.multiplatform.viewmodel)
             implementation(libs.compose.multiplatform.ui)
+            implementation(projects.library)
         }
     }
 }
