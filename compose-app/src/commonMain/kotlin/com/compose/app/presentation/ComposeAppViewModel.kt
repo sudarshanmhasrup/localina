@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
-internal class ComposeAppViewModel(useCase: LanguageUseCase) : ViewModel() {
+internal class ComposeAppViewModel(private val useCase: LanguageUseCase) : ViewModel() {
     var uiState = MutableStateFlow(value = ComposeAppUiState())
         private set
 
