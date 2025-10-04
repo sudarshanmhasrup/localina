@@ -11,7 +11,7 @@ kotlin {
     jvm()
 
     sourceSets {
-        commonMain.dependencies {
+        jvmMain.dependencies {
             implementation(compose.desktop.currentOs)
         }
     }
