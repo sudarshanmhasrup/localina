@@ -6,17 +6,6 @@ localization out of the box, but changing the locale in real time is a bit trick
 boilerplate code, which is also challenging to understand. `Localina` is a Compose Multiplatform library that enables 
 real-time localization of your Compose Multiplatform-powered app with an easy-to-use API.
 
-### Supported platforms
-
-`Localina` supports all platforms that Compose Multiplatform supports. This includes:
-
-| Platform | Target(s)                                       |
-|----------|-------------------------------------------------|
-| Android  | `androidTarget()`                               |
-| iOS      | `iosX64()`, `iosArm64()`, `iosSimulatorArm64()` |
-| Desktop  | `jvm()`                                         |
-| Web      | `wasmJs()`                                      |
-
 ### Installation guide
 
 To get started, add the `Localina` dependency to your existing [Gradle](https://gradle.org/) project. To make Localina 
@@ -71,3 +60,14 @@ To quickly copy the dependency, you can use the following command:
 ```kotlin
 implementation(libs.localina)
 ```
+
+### Supported platforms
+
+`Localina` supports all platforms that Compose Multiplatform supports. This includes:
+
+| Platform | Target(s)                                       |
+|----------|-------------------------------------------------|
+| Android  | `androidTarget()`                               |
+| iOS      | `iosX64()`, `iosArm64()`, `iosSimulatorArm64()` |
+| Desktop  | `jvm()`                                         |
+| Web      | `wasmJs()`                                      |
