@@ -24,13 +24,14 @@ kotlin {
     }
 
     @OptIn(ExperimentalWasmDsl::class)
-    wasmJs() {
+    wasmJs {
         browser()
         binaries.executable()
     }
 
     sourceSets {
         commonMain.dependencies {
+            implementation(libs.bundles.koin.multiplatform)
             implementation(libs.compose.multiplatform.viewmodel)
             implementation(libs.compose.multiplatform.ui)
             implementation(projects.library)
