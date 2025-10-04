@@ -1,9 +1,10 @@
-package com.compose.app.presentation
+package com.compose.app.presentation.composeApp
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.compose.app.domain.model.Language
 import com.compose.app.domain.useCase.LanguageUseCase
+import io.github.sudarshanmhasrup.localina.updater.LocaleUpdater
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
@@ -24,5 +25,6 @@ internal class ComposeAppViewModel(private val useCase: LanguageUseCase) : ViewM
 
     fun updateSelectedLanguage(language: Language) {
         useCase.updateSelectedLanguage(language = language)
+        LocaleUpdater.updateLocale(language.locale)
     }
 }
