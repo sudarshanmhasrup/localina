@@ -3,7 +3,7 @@
 Localization is one of the most important aspects of the user experience when building software that supports
 inclusivity by allowing users to use your software in their preferred language. Compose Multiplatform supports
 localization out of the box, but changing the locale in real time is a bit trickier and requires writing a lot of
-boilerplate code, which is also challenging to understand. `Localina` is a Compose Multiplatform library that enables
+boilerplate code, which is also challenging to understand. `Localina` Is a Compose Multiplatform library that enables
 real-time localization of your Compose Multiplatform-powered app with an easy-to-use API.
 
 ### Installation guide
@@ -63,7 +63,7 @@ implementation(libs.localina)
 
 ### Usage guide
 
-It's super easy to use Localina for updating your app's locale in real-time. Just follow these three steps and you're
+It's super easy to use Localina for updating your app's locale in real-time. Follow these three steps and you're
 good to go.
 
 #### Step 1: Add String Resources
@@ -97,7 +97,7 @@ fun App() {
 
 #### Step 3: Update the Locale
 
-To change the language at runtime, simply call the updateLocale function with your desired locale code.
+To change the language at runtime, call the updateLocale function with your desired locale code.
 
 ```kotlin
 // Replace "hi" with your desired locale code.
