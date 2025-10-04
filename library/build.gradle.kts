@@ -21,6 +21,12 @@ kotlin {
         browser()
         binaries.executable()
     }
+
+    sourceSets {
+        commonMain.dependencies {
+            implementation(libs.compose.multiplatform.ui)
+        }
+    }
 }
 
 // Custom build directory
