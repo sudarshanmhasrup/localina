@@ -13,6 +13,7 @@ library-version = "1.0.0-alpha"
 # compose-app module's configuration information
 composeApp-group = "com.compose.app"
 composeApp-version = "1.0.0"
+composeApp-packageOfResClass = "com.compose.app.resources"
 
 # compose-app module's android library package information
 composeApp-androidLibrary-namespace = "com.compose.app"
