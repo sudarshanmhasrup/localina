@@ -25,6 +25,8 @@ internal class ComposeAppViewModel(private val useCase: LanguageUseCase) : ViewM
 
     fun updateSelectedLanguage(language: Language) {
         useCase.updateSelectedLanguage(language = language)
+
+        // The locale updater API from Localina library
         LocaleUpdater.updateLocale(locale = language.locale)
     }
 }
