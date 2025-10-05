@@ -68,8 +68,8 @@ good to go.
 
 #### Step 1: Add String Resources
 
-Store all your string resources under `commonMain/composeResource` and add localized strings for each supported
-language, like this:
+Store all your string resources under `commonMain/composeResource` directory and add localized strings for each 
+supported language, like this:
 
 ```
 commonMain/composeResources/
