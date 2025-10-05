@@ -16,6 +16,7 @@ import com.compose.app.resources.language_page_heading
 import com.compose.app.resources.language_page_message
 import org.jetbrains.compose.resources.StringResource
 import org.jetbrains.compose.resources.stringResource
+import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable
 internal fun HeadingAndMessage(
@@ -40,6 +41,7 @@ internal fun HeadingAndMessage(
     }
 }
 
+@Preview(showBackground = true)
 @Composable
 private fun HeadingAndMessagePreview() {
     ComposeAppTheme {
