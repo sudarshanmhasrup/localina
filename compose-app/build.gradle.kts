@@ -11,6 +11,8 @@ group = libs.versions.composeApp.group.get()
 version = libs.versions.composeApp.version.get()
 
 kotlin {
+    androidTarget()
+
     jvm()
 
     listOf(
@@ -46,6 +48,15 @@ kotlin {
 
 compose.resources {
     packageOfResClass = libs.versions.composeApp.packageOfResClass.get()
+}
+
+android {
+    namespace = libs.versions.composeApp.androidLibrary.namespace.get()
+    compileSdk = libs.versions.composeApp.androidLibrary.compileSdk.get().toInt()
+
+    defaultConfig {
+        minSdk = libs.versions.composeApp.androidLibrary.minSdk.get().toInt()
+    }
 }
 
 // Custom build directory
