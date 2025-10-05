@@ -37,3 +37,4 @@ dependencyResolutionManagement {
 include(":library")
 include(":compose-app")
 include(":desktop-app")
+include(":web-app")
