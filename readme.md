@@ -8,9 +8,9 @@ to update the locale of your Compose Multiplatform app in real time.
 
 ### Installation guide
 
-To get started, add the `Localina` dependency to your existing [Gradle](https://gradle.org/) project. To make Localina
-available in any module's classpath, copy and paste the following line into your module's `build.gradle.kts` file under
-the `dependencies` block as shown below.
+To get started, add the `Localina` dependency to your existing [Gradle](https://gradle.org/) project. To make `Localina` available in 
+any module's classpath, copy and paste the following line into your module's `build.gradle.kts` file under the 
+`dependencies` block as shown below.
 
 ```kotlin
 kotlin {
@@ -63,7 +63,7 @@ implementation(libs.localina)
 
 ### Usage guide
 
-It's super easy to use Localina for updating your app's locale in real-time. Follow these three steps and you're
+It's super easy to use `Localina` for updating your app's locale in real-time. Follow these three steps and you're
 good to go.
 
 #### Step 1: Add String Resources
@@ -84,7 +84,8 @@ commonMain/composeResources/
 
 #### Step 2: Wrap Your UI with LocalinaApp Composable
 
-Wrap all your UI code inside the `LocalinaApp` composable, like this:
+Wrap all your UI code inside the 
+[Localina](/library/src/commonMain/kotlin/io/github/sudarshanmhasrup/localina/api/LocalinaApp.kt) composable, like this:
 
 ```kotlin
 @Composable
@@ -97,7 +98,8 @@ fun App() {
 
 #### Step 3: Update the Locale
 
-To change the language at runtime, call the updateLocale function with your desired locale code.
+To change the language at runtime, call the 
+[updateLocale()](/library/src/commonMain/kotlin/io/github/sudarshanmhasrup/localina/api/LocalinaApp.kt) function with your desired locale code.
 
 ```kotlin
 // Replace "hi" with your desired locale code.
