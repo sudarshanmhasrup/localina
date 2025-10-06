@@ -7,12 +7,17 @@ viewmodel = "2.9.4"
 material3 = "1.9.0-beta06"
 koin = "4.1.1"
 kotlinCoroutines = "1.10.2"
-mavenPublish = "0.34.0"
+mavenPublish = "0.28.0"
 
 # library module's configuration and publishing information
 library-group = "io.github.sudarshanmhasrup.localina"
 library-artifactId = "localina"
 library-version = "1.0.0-alpha"
+
+# library module's android library package information
+library-androidLibrary-namespace = "io.github.sudarshanmhasrup.localina"
+library-androidLibrary-compileSdk = "36"
+library-androidLibrary-minSdk = "21"
 
 # compose-app module's configuration information
 composeApp-group = "com.compose.app"
