@@ -7,6 +7,7 @@ viewmodel = "2.9.4"
 material3 = "1.9.0-beta06"
 koin = "4.1.1"
 kotlinCoroutines = "1.10.2"
+mavenPublish = "0.28.0"
 
 # library module's configuration and publishing information
 library-group = "io.github.sudarshanmhasrup.localina"
@@ -53,3 +54,4 @@ kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref 
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 compose-multiplatform = { id = "org.jetbrains.compose", version.ref = "composeMultiplatform" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "mavenPublish" }
