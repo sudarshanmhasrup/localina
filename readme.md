@@ -43,7 +43,7 @@ localina = "1.0.0-alpha"
 localina = { module = "io.github.sudarshanmhasrup.localina:localina", version.ref = "localina" }
 ```
 
-Then you can refer to the dependency in your `build.gradle` like this:
+Then you can refer to the dependency in your `build.gradle.kts` like this:
 
 ```kotlin
 kotlin {
