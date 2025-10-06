@@ -7,10 +7,11 @@ viewmodel = "2.9.4"
 material3 = "1.9.0-beta06"
 koin = "4.1.1"
 kotlinCoroutines = "1.10.2"
-mavenPublish = "0.28.0"
+mavenPublish = "0.34.0"
 
 # library module's configuration and publishing information
 library-group = "io.github.sudarshanmhasrup.localina"
+library-artifactId = "localina"
 library-version = "1.0.0-alpha"
 
 # compose-app module's configuration information
