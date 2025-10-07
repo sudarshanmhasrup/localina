@@ -40,6 +40,7 @@ webApp-group = "com.web.app"
 webApp-version = "1.0.0"
 
 [libraries]
+compose-multiplatform-ui-tooling-preview = { module = "org.jetbrains.compose.components:components-ui-tooling-preview", version.ref = "composeMultiplatform" }
 compose-multiplatform-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "composeMultiplatform" }
 compose-multiplatform-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "composeMultiplatform" }
 compose-multiplatform-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "composeMultiplatform" }
@@ -61,5 +62,5 @@ kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref 
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 compose-multiplatform = { id = "org.jetbrains.compose", version.ref = "composeMultiplatform" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-hot-reload  = { id = "org.jetbrains.compose.hot-reload", version.ref = "hotReload"}
+hot-reload = { id = "org.jetbrains.compose.hot-reload", version.ref = "hotReload" }
 maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "mavenPublish" }
