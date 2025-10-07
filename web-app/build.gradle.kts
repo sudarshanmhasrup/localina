@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
+import org.jetbrains.kotlin.gradle.targets.js.dsl.ExperimentalDistributionDsl
 
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
@@ -10,9 +11,16 @@ group = libs.versions.webApp.group.get()
 version = libs.versions.webApp.version.get()
 
 kotlin {
-    @OptIn(ExperimentalWasmDsl::class)
+    @OptIn(
+        ExperimentalWasmDsl::class,
+        ExperimentalDistributionDsl::class
+    )
     wasmJs {
-        browser()
+        browser {
+            distribution {
+                outputDirectory = File("$rootDir/.build/WebAppDistribution")
+            }
+        }
         binaries.executable()
     }
 
