@@ -47,6 +47,10 @@ kotlin {
     }
 }
 
+dependencies {
+    debugImplementation(libs.compose.multiplatform.ui.tooling)
+}
+
 compose.resources {
     packageOfResClass = libs.versions.composeApp.packageOfResClass.get()
 }
