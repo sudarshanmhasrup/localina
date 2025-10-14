@@ -33,3 +33,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
+include(":library")
