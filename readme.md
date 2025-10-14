@@ -6,6 +6,17 @@ localization out of the box, but changing the locale in real time is a bit trick
 boilerplate code, which is also challenging to understand. `Localina` Is a Kotlin Multiplatform library that allows you
 to update the locale of your Compose Multiplatform app in real time.
 
+### Supported platforms
+
+`Localina` supports all platforms that Compose Multiplatform supports. This includes:
+
+| Platform | Target(s)                                       |
+|----------|-------------------------------------------------|
+| Android  | `androidTarget()`                               |
+| iOS      | `iosX64()`, `iosArm64()`, `iosSimulatorArm64()` |
+| Desktop  | `jvm()`                                         |
+| Web      | `wasmJs()`                                      |
+
 ### Contributing
 
 Contributions are welcome! Please feel free to open an issue or submit a pull request.
