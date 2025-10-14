@@ -1,5 +1,5 @@
 plugins {
-
+    alias(libs.plugins.kotlin.multiplatform)
 }
 
 // Custom build directory
