@@ -1,6 +1,7 @@
 [versions]
 # Library and plugins versions
 kotlin = "2.2.20"
+androidGradlePlugin = "8.12.3"
 
 # library module's configuration and publishing information
 library-group = "io.github.sudarshanmhasrup.localina"
@@ -11,3 +12,4 @@ library-version = "1.0.0-alpha"
 
 [plugins]
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
