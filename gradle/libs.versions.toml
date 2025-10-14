@@ -2,6 +2,11 @@
 # Library and plugins versions
 kotlin = "2.2.20"
 
+# library module's configuration and publishing information
+library-group = "io.github.sudarshanmhasrup.localina"
+library-artifactId = "localina"
+library-version = "1.0.0-alpha"
+
 [libraries]
 
 [plugins]
