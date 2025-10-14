@@ -8,6 +8,11 @@ library-group = "io.github.sudarshanmhasrup.localina"
 library-artifactId = "localina"
 library-version = "1.0.0-alpha"
 
+# library module's android library package information
+library-androidLibrary-namespace = "io.github.sudarshanmhasrup.localina"
+library-androidLibrary-compileSdk = "36"
+library-androidLibrary-minSdk = "21"
+
 [libraries]
 
 [plugins]
