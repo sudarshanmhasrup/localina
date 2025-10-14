@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
 }
 
 group = libs.versions.library.group.get()
@@ -21,6 +21,15 @@ kotlin {
     wasmJs {
         browser()
         binaries.executable()
+    }
+}
+
+android {
+    namespace = libs.versions.library.androidLibrary.namespace.get()
+    compileSdk = libs.versions.library.androidLibrary.compileSdk.get().toInt()
+
+    defaultConfig {
+        minSdk = libs.versions.library.androidLibrary.minSdk.get().toInt()
     }
 }
 
