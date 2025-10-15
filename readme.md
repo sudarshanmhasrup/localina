@@ -124,5 +124,5 @@ Contributions are welcome! Please feel free to open an issue or submit a pull re
 
 ### Thank you 🙌
 
-Thank you so much for checking out the `Localina` project. If you like my work or this project, feel
-free to give a star to the repository. Happy coding!
+Thank you so much for checking out the `Localina` project. If you like my work or this project, feel free to give a star
+to the repository. Happy coding!
