@@ -4,8 +4,7 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 
 /**
- * A singleton object that manages and updates the current locale for your Compose Multiplatform app
- * in real time.
+ * A singleton object that manages and updates the current locale for your Compose Multiplatform app  in real time.
  *
  * Example usage:
  * ```

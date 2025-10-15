@@ -9,12 +9,10 @@ import io.github.sudarshanmhasrup.localina.internal.LocalAppLocale
 /**
  * The root composable of the Localina library.
  *
- * Wrap your app's UI inside `LocalinaApp` to enable real-time
- * locale updates across all composables.
+ * Wrap your app's UI inside [LocalinaApp] composable to enable real-time locale updates across all composables.
  *
- * Whenever the locale is updated using [LocaleUpdater.updateLocale],
- * the UI inside this composable automatically recomposes with the
- * new language.
+ * Whenever the locale is updated using [LocaleUpdater.updateLocale], the UI inside this composable automatically
+ * recomposes with the new language.
  *
  * Example:
  * ```
