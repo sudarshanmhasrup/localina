@@ -61,6 +61,52 @@ To quickly copy the dependency, you can use the following command:
 implementation(libs.localina)
 ```
 
+### Usage guide
+
+It's super easy to use `Localina` for updating your app's locale in real-time. Follow these three steps and you're good
+to go.
+
+#### Step 1: Add String Resources
+
+Store all your string resources under `commonMain/composeResource` directory and add localized strings for each
+supported language, like this:
+
+```
+commonMain/composeResources/
+├── values/
+│   └── strings.xml
+├── values-hi/
+│   └── strings.xml
+├── values-fr/
+│   └── strings.xml
+└── ... (other locale directories)
+```
+
+#### Step 2: Wrap Your UI with LocalinaApp Composable
+
+Wrap all your UI code inside the
+[Localina](/library/src/commonMain/kotlin/io/github/sudarshanmhasrup/localina/api/LocalinaApp.kt) composable, like this:
+
+```kotlin
+@Composable
+fun App() {
+    LocalinaApp {
+        // Your UI code here
+    }
+}
+```
+
+#### Step 3: Update the Locale
+
+To change the language at runtime, call the
+[updateLocale()](/library/src/commonMain/kotlin/io/github/sudarshanmhasrup/localina/api/LocalinaApp.kt) function with
+your desired locale code.
+
+```kotlin
+// Replace "hi" with your desired locale code.
+LocaleUpdater.updateLocale(locale = "hi")
+```
+
 ### Supported platforms
 
 `Localina` supports all platforms that Compose Multiplatform supports. This includes:
