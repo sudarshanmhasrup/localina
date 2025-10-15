@@ -1,4 +1,6 @@
+import com.android.build.api.dsl.androidLibrary
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
@@ -11,7 +13,20 @@ group = libs.versions.library.group.get()
 version = libs.versions.library.version.get()
 
 kotlin {
-    androidTarget()
+    @Suppress("UnstableApiUsage")
+    androidLibrary {
+        namespace = libs.versions.library.androidLibrary.namespace.get()
+        compileSdk = libs.versions.library.androidLibrary.compileSdk.get().toInt()
+        minSdk = libs.versions.library.androidLibrary.minSdk.get().toInt()
+
+        compilations.configureEach {
+            compilerOptions.configure {
+                jvmTarget.set(
+                    JvmTarget.JVM_11
+                )
+            }
+        }
+    }
 
     jvm()
 
@@ -29,15 +44,6 @@ kotlin {
         commonMain.dependencies {
             implementation(libs.compose.multiplatform.ui)
         }
-    }
-}
-
-android {
-    namespace = libs.versions.library.androidLibrary.namespace.get()
-    compileSdk = libs.versions.library.androidLibrary.compileSdk.get().toInt()
-
-    defaultConfig {
-        minSdk = libs.versions.library.androidLibrary.minSdk.get().toInt()
     }
 }
 
