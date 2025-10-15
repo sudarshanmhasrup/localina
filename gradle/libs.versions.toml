@@ -15,11 +15,15 @@ library-androidLibrary-namespace = "io.github.sudarshanmhasrup.localina"
 library-androidLibrary-compileSdk = "36"
 library-androidLibrary-minSdk = "21"
 
+# wasm-app module's configuration information
+wasmApp-group = "com.wasm.app"
+wasmApp-version = "1.0.0"
+
 [libraries]
 compose-multiplatform-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "composeMultiplatform" }
 
 [plugins]
-kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.mul tiplatform", version.ref = "kotlin" }
 android-library = { id = "com.android.kotlin.multiplatform.library", version.ref = "androidGradlePlugin" }
 compose-multiplatform = { id = "org.jetbrains.compose", version.ref = "composeMultiplatform" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
