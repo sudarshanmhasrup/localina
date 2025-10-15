@@ -48,5 +48,42 @@ kotlin {
     }
 }
 
+mavenPublishing {
+    publishToMavenCentral()
+    signAllPublications()
+
+    coordinates(
+        groupId = libs.versions.library.group.get(),
+        artifactId = libs.versions.library.artifactId.get(),
+        version = libs.versions.library.version.get()
+    )
+
+    pom {
+        name.set("Localina")
+        description.set("A Kotlin Multiplatform library that supports real-time locale updates in your Compose Multiplatform app.")
+        inceptionYear.set("2025")
+        url.set("https://github.com/sudarshanmhasrup/localina")
+        licenses {
+            license {
+                name.set("The Apache License, Version 2.0")
+                url.set("https://www.apache.org/licenses/LICENSE-2.0.txt")
+                distribution.set("repo")
+            }
+        }
+        developers {
+            developer {
+                id.set("sudarshanmhasrup")
+                name.set("Sudarshan")
+                url.set("https://github.com/sudarshanmhasrup")
+            }
+        }
+        scm {
+            url.set("https://github.com/sudarshanmhasrup/localina")
+            connection.set("scm:git:https://github.com/sudarshanmhasrup/localina.git")
+            developerConnection.set("scm:git:ssh://git@github.com/sudarshanmhasrup/localina.git")
+        }
+    }
+}
+
 // Custom build directory
 layout.buildDirectory.set(file("$rootDir/.build/Library"))
