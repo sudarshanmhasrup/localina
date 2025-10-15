@@ -20,6 +20,11 @@ object LocaleUpdater {
         return locale
     }
 
+    /**
+     * Updates the current locale of the app.
+     *
+     * @param locale The locale code to switch to (e.g., "en", "hi", "fr").
+     */
     fun updateLocale(locale: String) {
         this.locale.value = locale
     }
