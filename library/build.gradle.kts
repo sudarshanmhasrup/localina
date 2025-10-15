@@ -22,6 +22,12 @@ kotlin {
         browser()
         binaries.executable()
     }
+
+    sourceSets {
+        commonMain.dependencies {
+            implementation(libs.compose.multiplatform.ui)
+        }
+    }
 }
 
 android {
