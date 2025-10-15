@@ -2,6 +2,7 @@
 # Library and plugins versions
 kotlin = "2.2.20"
 androidGradlePlugin = "8.12.3"
+composeMultiplatform = "1.9.1"
 
 # library module's configuration and publishing information
 library-group = "io.github.sudarshanmhasrup.localina"
@@ -14,6 +15,7 @@ library-androidLibrary-compileSdk = "36"
 library-androidLibrary-minSdk = "21"
 
 [libraries]
+compose-multiplatform-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "composeMultiplatform" }
 
 [plugins]
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
