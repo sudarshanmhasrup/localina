@@ -14,6 +14,10 @@ jobs:
                 with:
                     distribution: 'zulu'
                     java-version: 21
+
+            -   name: Make gradlew executable
+                run: chmod +x ./gradlew
+
             -   name: Publish to MavenCentral
                 run: ./gradlew publishAndReleaseToMavenCentral --no-configuration-cache
                 env:
