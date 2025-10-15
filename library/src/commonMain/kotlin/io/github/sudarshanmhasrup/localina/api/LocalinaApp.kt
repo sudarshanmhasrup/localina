@@ -5,7 +5,6 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.key
 import io.github.sudarshanmhasrup.localina.internal.LocalAppLocale
 
-
 /**
  * The root composable of the Localina library.
  *
