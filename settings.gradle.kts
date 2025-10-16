@@ -36,3 +36,4 @@ dependencyResolutionManagement {
 
 include(":library")
 include(":wasm-app")
+include(":compose-app")
