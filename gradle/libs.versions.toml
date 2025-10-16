@@ -19,6 +19,11 @@ library-androidLibrary-minSdk = "21"
 wasmApp-group = "com.wasm.app"
 wasmApp-version = "1.0.0"
 
+# compose-app module's configuration information
+composeApp-group = "com.compose.app"
+composeApp-version = "1.0.0"
+composeApp-packageOfResClass = "com.compose.app.resources"
+
 [libraries]
 compose-multiplatform-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "composeMultiplatform" }
 
