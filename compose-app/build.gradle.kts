@@ -48,6 +48,9 @@ kotlin {
     }
 
     sourceSets {
+        androidMain.dependencies {
+            implementation(libs.compose.multiplatform.ui.tooling.preview)
+        }
         commonMain.dependencies {
             implementation(libs.bundles.koin.multiplatform)
             implementation(libs.lifecycle.runtime.compose)
