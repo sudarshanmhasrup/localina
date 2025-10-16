@@ -50,7 +50,11 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             implementation(libs.bundles.koin.multiplatform)
+            implementation(libs.compose.multiplatform.material3)
             implementation(libs.compose.multiplatform.ui)
+            implementation(libs.compose.multiplatform.foundation)
+            implementation(libs.compose.multiplatform.resources)
+            implementation(libs.compose.multiplatform.components.ui.tooling.preview)
         }
     }
 }
