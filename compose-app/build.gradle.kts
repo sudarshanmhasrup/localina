@@ -61,5 +61,9 @@ kotlin {
     }
 }
 
+compose.resources {
+    packageOfResClass = libs.versions.composeApp.packageOfResClass.get()
+}
+
 // Custom build directory
 layout.buildDirectory.set(file("$rootDir/.build/ComposeApp"))
