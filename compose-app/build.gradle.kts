@@ -60,6 +60,7 @@ kotlin {
             implementation(libs.compose.multiplatform.foundation)
             implementation(libs.compose.multiplatform.resources)
             implementation(libs.compose.multiplatform.components.ui.tooling.preview)
+            implementation(projects.library)
         }
     }
 }
