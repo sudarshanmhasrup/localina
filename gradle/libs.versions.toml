@@ -24,6 +24,11 @@ composeApp-group = "com.compose.app"
 composeApp-version = "1.0.0"
 composeApp-packageOfResClass = "com.compose.app.resources"
 
+# compose-app module's android library package information
+composeApp-androidLibrary-namespace = "com.compose.app"
+composeApp-androidLibrary-compileSdk = "36"
+composeApp-androidLibrary-minSdk = "24"
+
 [libraries]
 compose-multiplatform-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "composeMultiplatform" }
 
