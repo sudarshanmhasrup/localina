@@ -9,7 +9,7 @@ import com.compose.app.resources.*
 import org.jetbrains.compose.resources.Font
 
 @Composable
-fun getTypography(): Typography {
+internal fun getTypography(): Typography {
     val poppins = FontFamily(
         Font(resource = Res.font.regular, weight = FontWeight.Normal),
         Font(resource = Res.font.medium, weight = FontWeight.Medium),
