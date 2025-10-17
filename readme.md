@@ -6,17 +6,17 @@ localization out of the box, but changing the locale in real time is a bit trick
 boilerplate code, which is also challenging to understand. `Localina` Is a Kotlin Multiplatform library that allows you
 to update the locale of your Compose Multiplatform app in real time.
 
-### Installation guide
-
-To get started, add the `Localina` dependency to your existing [Gradle](https://gradle.org/) project. To make `Localina`
-available in any module's classpath, copy and paste the following line into your module's `build.gradle.kts` file under
-the `dependencies` block as shown below.
-
 ### Live preview
 
 View a live preview of `Localina` in action: [Localina Live Preview](https://sudarshanmhasrup.github.io/localina/demo)
 
 <img src="/assets/localina-demo-screenshot.png" alt="Demo Screenshot"/>
+
+### Installation guide
+
+To get started, add the `Localina` dependency to your existing [Gradle](https://gradle.org/) project. To make `Localina`
+available in any module's classpath, copy and paste the following line into your module's `build.gradle.kts` file under
+the `dependencies` block as shown below.
 
 ```kotlin
 kotlin {
