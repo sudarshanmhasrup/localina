@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="language_page_heading">Localina Showcase</string>
+    <string name="language_page_message">This screen demonstrates how the Localina library lets you change app language instantly. Select any language below to see it in action.</string>
+</resources>
