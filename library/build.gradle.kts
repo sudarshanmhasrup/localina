@@ -43,6 +43,7 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
+            implementation(libs.compose.multiplatform.runtime)
             implementation(libs.compose.multiplatform.ui)
         }
     }
