@@ -7,6 +7,7 @@ hotReload = "1.0.0-rc02"
 material3 = "1.9.0"
 materialAdaptive = "1.1.2"
 viewmodel = "2.9.5"
+kotlinCoroutines = "1.10.2"
 koin = "4.1.1"
 mavenPublish = "0.34.0"
 
@@ -50,6 +51,7 @@ material3-adaptive = { module = "org.jetbrains.compose.material3.adaptive:adapti
 compose-multiplatform-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "composeMultiplatform" }
 compose-multiplatform-viewmodel = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "viewmodel" }
 lifecycle-runtime-compose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "viewmodel" }
+kotlin-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "kotlinCoroutines" }
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin" }
