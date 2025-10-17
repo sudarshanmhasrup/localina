@@ -24,6 +24,7 @@ kotlin {
     sourceSets {
         wasmJsMain.dependencies {
             implementation(libs.compose.multiplatform.ui)
+            implementation(projects.composeApp)
         }
     }
 }
