@@ -35,4 +35,5 @@ jobs:
                 with:
                     github_token: ${{ secrets.GITHUB_TOKEN }}
                     publish_dir: .build/WasmAppDistribution
+                    destination_dir: demo
                     keep_files: true
