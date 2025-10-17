@@ -35,5 +35,6 @@ dependencyResolutionManagement {
 }
 
 include(":library")
+include(":desktop-app")
 include(":wasm-app")
 include(":compose-app")
