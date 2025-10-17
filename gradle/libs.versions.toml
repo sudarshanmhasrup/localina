@@ -19,6 +19,11 @@ library-androidLibrary-namespace = "io.github.sudarshanmhasrup.localina"
 library-androidLibrary-compileSdk = "36"
 library-androidLibrary-minSdk = "21"
 
+# desktop-app module's configuration information
+desktopApp-group = "com.desktop.app"
+desktopApp-version = "1.0.0"
+desktopApp-mainClass = "com.desktop.app.MainKt"
+
 # wasm-app module's configuration information
 wasmApp-group = "com.wasm.app"
 wasmApp-version = "1.0.0"
