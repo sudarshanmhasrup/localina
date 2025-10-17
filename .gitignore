@@ -9,6 +9,8 @@
 
 # Build output folder
 .build
+wasm-app/build
+library/build
 
 # Local properties
 local.properties
