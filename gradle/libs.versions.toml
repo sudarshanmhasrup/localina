@@ -3,6 +3,7 @@
 kotlin = "2.2.20"
 androidGradlePlugin = "8.12.3"
 composeMultiplatform = "1.9.1"
+hotReload = "1.0.0-rc02"
 material3 = "1.9.0"
 materialAdaptive = "1.1.2"
 viewmodel = "2.9.5"
@@ -63,4 +64,5 @@ kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref 
 android-kotlin-multiplatform-library = { id = "com.android.kotlin.multiplatform.library", version.ref = "androidGradlePlugin" }
 compose-multiplatform = { id = "org.jetbrains.compose", version.ref = "composeMultiplatform" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+hot-reload = { id = "org.jetbrains.compose.hot-reload", version.ref = "hotReload" }
 maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "mavenPublish" }
