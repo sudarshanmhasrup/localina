@@ -16,6 +16,8 @@ the `dependencies` block as shown below.
 
 View a live preview of `Localina` in action: [Localina Live Preview](https://sudarshanmhasrup.github.io/localina/demo)
 
+<img src="/assets/localina-demo-screenshot.png" alt="Demo Screenshot"/>
+
 ```kotlin
 kotlin {
     sourceSets {
