@@ -15,6 +15,7 @@ import androidx.compose.material3.adaptive.currentWindowAdaptiveInfo
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.window.core.layout.WindowHeightSizeClass
@@ -34,10 +35,7 @@ fun ComposeApp() {
     ComposeAppTheme {
         LocalinaApp {
             val backgroundColor = MaterialTheme.colorScheme.background
-            val backgroundModifier = Modifier
-                .background(color = backgroundColor)
-                .fillMaxSize()
-            Column(modifier = backgroundModifier) {
+            Column(modifier = Modifier.backgroundModifier(backgroundColor = backgroundColor)) {
                 LanguagePage()
             }
         }
