@@ -12,7 +12,7 @@ kotlin {
     wasmJs {
         browser {
             distribution {
-                outputDirectory = File("$rootDir/.build/WebAppDistribution")
+                outputDirectory = File("$rootDir/.build/WasmAppDistribution")
             }
         }
         binaries.executable()
