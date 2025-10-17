@@ -4,6 +4,7 @@ kotlin = "2.2.20"
 androidGradlePlugin = "8.12.3"
 composeMultiplatform = "1.9.1"
 material3 = "1.9.0"
+materialAdaptive = "1.1.2"
 viewmodel = "2.9.5"
 koin = "4.1.1"
 mavenPublish = "0.34.0"
@@ -39,6 +40,7 @@ compose-multiplatform-ui-tooling = { module = "org.jetbrains.compose.ui:ui-tooli
 compose-multiplatform-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "composeMultiplatform" }
 compose-multiplatform-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "composeMultiplatform" }
 compose-multiplatform-material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "material3" }
+material3-adaptive = { module = "org.jetbrains.compose.material3.adaptive:adaptive", version.ref = "materialAdaptive"}
 compose-multiplatform-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "composeMultiplatform" }
 compose-multiplatform-viewmodel = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "viewmodel" }
 lifecycle-runtime-compose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "viewmodel" }
