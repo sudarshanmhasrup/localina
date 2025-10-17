@@ -12,6 +12,10 @@ To get started, add the `Localina` dependency to your existing [Gradle](https://
 available in any module's classpath, copy and paste the following line into your module's `build.gradle.kts` file under
 the `dependencies` block as shown below.
 
+### Live preview
+
+View a live preview of `Localina` in action: [Localina Live Preview](https://sudarshanmhasrup.github.io/localina/demo)
+
 ```kotlin
 kotlin {
     sourceSets {
