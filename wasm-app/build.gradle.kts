@@ -8,10 +8,7 @@ plugins {
 }
 
 kotlin {
-    @OptIn(
-        ExperimentalWasmDsl::class,
-        ExperimentalDistributionDsl::class
-    )
+    @OptIn(ExperimentalWasmDsl::class, ExperimentalDistributionDsl::class)
     wasmJs {
         browser {
             distribution {
