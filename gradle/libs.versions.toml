@@ -1,5 +1,5 @@
 [versions]
-# Library and plugins versions
+# Library and plugin versions
 kotlin = "2.2.20"
 androidGradlePlugin = "8.12.3"
 composeMultiplatform = "1.9.1"
