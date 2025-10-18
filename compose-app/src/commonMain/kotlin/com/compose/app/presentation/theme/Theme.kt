@@ -21,7 +21,7 @@ private val darkColorScheme = darkColorScheme(
 
 @Composable
 internal fun ComposeAppTheme(
-    isDarkMode: Boolean = isSystemInDarkTheme(),
+    isDarkMode: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = if (isDarkMode) darkColorScheme else lightColorScheme
