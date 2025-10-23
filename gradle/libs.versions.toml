@@ -26,9 +26,9 @@ desktopApp-group = "com.desktop.app"
 desktopApp-version = "1.0.0"
 desktopApp-mainClass = "com.desktop.app.MainKt"
 
-# wasm-app module's configuration information
-wasmApp-group = "com.wasm.app"
-wasmApp-version = "1.0.0"
+# web-app module's configuration information
+webApp-group = "com.web.app"
+webApp-version = "1.0.0"
 
 # compose-app module's configuration information
 composeApp-group = "com.compose.app"
