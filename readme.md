@@ -111,6 +111,9 @@ your desired locale code.
 ```kotlin
 // Replace "hi" with your desired locale code.
 LocaleUpdater.updateLocale(locale = "hi")
+
+// Or change language using Locale enum
+LocaleUpdater.updateLocale(Locale.Hindi)
 ```
 
 
