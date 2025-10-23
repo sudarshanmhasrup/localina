@@ -26,7 +26,7 @@ import io.github.sudarshanmhasrup.localina.internal.LocalAppLocale
  * @param content The composable content of your app.
  */
 @Composable
-fun LocalinaApp(content: @Composable () -> Unit) {
+public fun LocalinaApp(content: @Composable () -> Unit) {
     val currentLocale = LocaleUpdater.getLocale().value
     CompositionLocalProvider(LocalAppLocale provides currentLocale) {
         key(currentLocale) {
