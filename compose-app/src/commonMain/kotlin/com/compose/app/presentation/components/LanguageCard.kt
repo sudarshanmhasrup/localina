@@ -23,6 +23,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.compose.app.domain.model.Language
 import com.compose.app.presentation.theme.ComposeAppTheme
+import io.github.sudarshanmhasrup.localina.api.Locale
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable
@@ -70,7 +71,7 @@ private fun LanguageCardPreview() {
         val language = Language(
             name = "English",
             message = "Use this app in English",
-            locale = "en",
+            locale = Locale.English,
             isSelected = true
         )
         LanguageCard(language = language, modifier = Modifier.fillMaxWidth(), onClick = {})
