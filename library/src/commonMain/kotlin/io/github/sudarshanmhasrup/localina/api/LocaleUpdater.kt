@@ -12,7 +12,7 @@ import androidx.compose.runtime.mutableStateOf
  * LocaleUpdater.updateLocale("hi")
  * ```
  */
-object LocaleUpdater {
+public object LocaleUpdater {
     private var locale = mutableStateOf<String?>(null)
 
     internal fun getLocale(): MutableState<String?> {
@@ -24,7 +24,16 @@ object LocaleUpdater {
      *
      * @param locale The locale code to switch to (e.g., "en", "hi", "fr").
      */
-    fun updateLocale(locale: String) {
+    public fun updateLocale(locale: String) {
         this.locale.value = locale
+    }
+
+    /**
+     * Changes the app's language to the given [Locale] enum value.
+     *
+     * @param locale The language enum to switch to.
+     */
+    public fun updateLocale(locale: Locale) {
+        this.locale.value = locale.code
     }
 }
