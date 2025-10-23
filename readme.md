@@ -114,35 +114,35 @@ LocaleUpdater.updateLocale(locale = "hi")
 LocaleUpdater.updateLocale(locale = Locale.Hindi)
 ```
 
-
 #### Step 4: (Only for Web) Override Navigator.languages Property
 
 In your browser's index.html, put the following code before loading the application scripts:
 
 ```html
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        ...
-        <script>
-            var currentLanguagesImplementation = Object.getOwnPropertyDescriptor(Navigator.prototype, "languages");
-            var newLanguagesImplementation = Object.assign({}, currentLanguagesImplementation, {
-                get: function () {
-                    if (window.__customLocale) {
-                        return [window.__customLocale];
-                    } else {
-                        return currentLanguagesImplementation.get.apply(this);
-                    }
-                }
-            });
 
-            Object.defineProperty(Navigator.prototype, "languages", newLanguagesImplementation)
-        </script>
-        <script src="skiko.js"></script>
-        ...
-    </head>
-    <body></body>
-    <script src="composeApp.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    ...
+    <script>
+        var currentLanguagesImplementation = Object.getOwnPropertyDescriptor(Navigator.prototype, "languages");
+        var newLanguagesImplementation = Object.assign({}, currentLanguagesImplementation, {
+            get: function () {
+                if (window.__customLocale) {
+                    return [window.__customLocale];
+                } else {
+                    return currentLanguagesImplementation.get.apply(this);
+                }
+            }
+        });
+
+        Object.defineProperty(Navigator.prototype, "languages", newLanguagesImplementation)
+    </script>
+    <script src="skiko.js"></script>
+    ...
+</head>
+<body></body>
+<script src="composeApp.js"></script>
 </html>
 ```
 
