@@ -5,7 +5,11 @@ import androidx.compose.material3.Typography
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
-import com.compose.app.resources.*
+import com.compose.app.resources.Res
+import com.compose.app.resources.bold
+import com.compose.app.resources.medium
+import com.compose.app.resources.regular
+import com.compose.app.resources.semibold
 import org.jetbrains.compose.resources.Font
 
 @Composable
