@@ -10,8 +10,6 @@ to update the locale of your Compose Multiplatform app in real time.
 
 View a live preview of `Localina` in action: [Localina Live Preview](https://sudarshanmhasrup.github.io/localina/demo)
 
-<img src="/assets/localina-demo-screenshot.png" alt="Demo Screenshot"/>
-
 ### Installation guide
 
 To get started, add the `Localina` dependency to your existing [Gradle](https://gradle.org/) project. To make `Localina`
