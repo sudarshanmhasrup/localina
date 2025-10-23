@@ -111,7 +111,7 @@ your desired locale code.
 LocaleUpdater.updateLocale(locale = "hi")
 
 // Or change language using Locale enum
-LocaleUpdater.updateLocale(Locale.Hindi)
+LocaleUpdater.updateLocale(locale = Locale.Hindi)
 ```
 
 
