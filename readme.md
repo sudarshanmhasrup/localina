@@ -160,7 +160,7 @@ In your browser's index.html, put the following code before loading the applicat
 
 Contributions are welcome! Please feel free to open an issue or submit a pull request.
 
-### Thank you 🙌
+### Thank you! 🙌
 
 Thank you so much for checking out the `Localina` project. If you like my work or this project, feel free to give a star
 to the repository. Happy coding!
