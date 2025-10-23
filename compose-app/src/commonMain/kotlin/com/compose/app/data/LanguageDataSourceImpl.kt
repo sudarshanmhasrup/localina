@@ -1,6 +1,7 @@
 package com.compose.app.data
 
 import com.compose.app.domain.model.Language
+import io.github.sudarshanmhasrup.localina.api.Locale
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update
@@ -11,19 +12,19 @@ internal class LanguageDataSourceImpl : LanguageDataSource {
             Language(
                 name = "English",
                 message = "Use this app in English.",
-                locale = "en",
+                locale = Locale.English,
                 isSelected = true
-            ),
-            Language(
-                name = "Marathi",
-                message = "हे अ‍ॅप मराठीत वापरा.",
-                locale = "mr",
-                isSelected = false
             ),
             Language(
                 name = "Hindi",
                 message = "इस ऐप का उपयोग हिंदी में करें।",
-                locale = "hi",
+                locale = Locale.Hindi,
+                isSelected = false
+            ),
+            Language(
+                name = "Marathi",
+                message = "हे अ‍ॅप मराठीत वापरा.",
+                locale = Locale.Marathi,
                 isSelected = false
             )
         )
