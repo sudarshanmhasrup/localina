@@ -127,7 +127,9 @@ private fun LanguageList(
             LanguageCard(
                 language = language,
                 modifier = Modifier.fillMaxWidth(),
-                onClick = { composeAppViewModel.updateSelectedLanguage(language) }
+                onClick = {
+                    composeAppViewModel.updateSelectedLanguage(language = language)
+                }
             )
         }
     }
