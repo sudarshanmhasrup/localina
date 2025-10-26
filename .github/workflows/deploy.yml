@@ -35,12 +35,12 @@ jobs:
                 run: chmod +x ./gradlew
 
             -   name: Build Wasm App
-                run: ./gradlew :wasm-app:wasmJsBrowserDistribution
+                run: ./gradlew :example:web:wasmJsBrowserDistribution
 
             -   name: Deploy to GitHub Pages
                 uses: peaceiris/actions-gh-pages@v4
                 with:
                     github_token: ${{ secrets.GITHUB_TOKEN }}
-                    publish_dir: .build/WasmAppDistribution
+                    publish_dir: .build/WebAppDistribution
                     destination_dir: demo
                     keep_files: true
