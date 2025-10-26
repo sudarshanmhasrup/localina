@@ -8,6 +8,16 @@ plugins {
 }
 
 kotlin {
+    @OptIn(ExperimentalDistributionDsl::class)
+    js(IR) {
+        browser {
+            distribution {
+                outputDirectory = File("$rootDir/.build/WasmAppDistribution")
+            }
+        }
+        binaries.executable()
+    }
+
     @OptIn(ExperimentalWasmDsl::class, ExperimentalDistributionDsl::class)
     wasmJs {
         browser {
@@ -21,10 +31,10 @@ kotlin {
     sourceSets {
         wasmJsMain.dependencies {
             implementation(libs.compose.multiplatform.ui)
-            implementation(projects.composeApp)
+            implementation(projects.example.compose)
         }
     }
 }
 
 // Custom build directory
-layout.buildDirectory.set(file("$rootDir/.build/WasmApp"))
+layout.buildDirectory.set(file("$rootDir/.build/example/Web"))
