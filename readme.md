@@ -33,8 +33,8 @@ To quickly copy the dependency, you can use the following command:
 implementation("io.github.sudarshanmhasrup.localina:localina:1.0.0-alpha")
 ```
 
-If your project uses a version catalog for centralized dependency management, add the following
-lines to your `libs.versions.toml` file:
+If your project uses a version catalog for centralized dependency management, then add the following lines to your
+`libs.versions.toml` file:
 
 ```
 [versions]
