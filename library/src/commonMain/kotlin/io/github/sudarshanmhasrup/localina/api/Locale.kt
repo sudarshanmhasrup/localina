@@ -6,7 +6,7 @@ package io.github.sudarshanmhasrup.localina.api
  *
  * @property code The two-letter ISO 639-1 language code for the locale
  */
-enum class Locale(val code: String) {
+public enum class Locale(val code: String) {
     English(code = "en"),
     Marathi(code = "mr"),
     Hindi(code = "hi")
