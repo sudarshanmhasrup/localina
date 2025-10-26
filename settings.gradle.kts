@@ -35,6 +35,12 @@ dependencyResolutionManagement {
 }
 
 include(":library")
-include(":desktop-app")
-include(":wasm-app")
-include(":compose-app")
+
+// Example app modules
+setOf(
+    "desktop",
+    "web",
+    "compose" // Umbrella module
+).forEach { module ->
+    include(":example:$module")
+}
