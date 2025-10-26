@@ -10,7 +10,7 @@
 # Build output folder
 .build
 build
-wasm-app/build
+example/web/build
 library/build
 
 # Local properties
