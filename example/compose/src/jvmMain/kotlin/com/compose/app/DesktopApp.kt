@@ -4,6 +4,6 @@ import androidx.compose.runtime.Composable
 import com.compose.app.presentation.composeApp.ComposeApp
 
 @Composable
-fun JvmApp() {
+fun DesktopApp() {
     ComposeApp()
 }
