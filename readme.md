@@ -46,7 +46,7 @@ localina = "1.0.0-alpha"
 localina = { module = "io.github.sudarshanmhasrup.localina:localina", version.ref = "localina" }
 ```
 
-Then you can refer to the dependency in your `build.gradle.kts` like this:
+Then you can refer to the dependency in your module's `build.gradle.kts` file like this:
 
 ```kotlin
 kotlin {
@@ -150,12 +150,12 @@ In your browser's index.html, put the following code before loading the applicat
 
 `Localina` supports all platforms that Compose Multiplatform supports. This includes:
 
-| Platform | Target(s)                                       |
-|----------|-------------------------------------------------|
-| Android  | `androidTarget()`                               |
-| iOS      | `iosX64()`, `iosArm64()`, `iosSimulatorArm64()` |
-| Desktop  | `jvm()`                                         |
-| Web      | `wasmJs()`                                      |
+| Platform | Target(s)                                      |
+|----------|------------------------------------------------|
+| Android  | `androidTarget()`                              |
+| iOS      | `iosX64()`, `iosArm64()`,`iosSimulatorArm64()` |
+| Desktop  | `jvm()`                                        |
+| Web      | `wasmJs()` `js()`                              |
 
 ### Contributing
 
