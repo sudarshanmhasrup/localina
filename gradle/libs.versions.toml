@@ -26,6 +26,10 @@ example-desktop-group = "com.desktop.app"
 example-desktop-version = "1.0.0"
 example-desktop-mainClass = "com.desktop.app.MainKt"
 
+# example:desktop module's distribution information
+example-desktop-distributionPackageName = "Localina"
+example-desktop-distributionPackageVersion = "1.0.0"
+
 # example:web module's configuration information
 example-web-group = "com.web.app"
 example-web-version = "1.0.0"
