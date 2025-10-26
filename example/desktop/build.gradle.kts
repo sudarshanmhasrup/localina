@@ -7,8 +7,8 @@ plugins {
     alias(libs.plugins.hot.reload)
 }
 
-group = libs.versions.desktopApp.group.get()
-version = libs.versions.desktopApp.version.get()
+group = libs.versions.example.desktop.group.get()
+version = libs.versions.example.desktop.version.get()
 
 kotlin {
     jvm {
@@ -31,16 +31,16 @@ kotlin {
         jvmMain.dependencies {
             implementation(libs.kotlin.coroutines.swing)
             implementation(compose.desktop.currentOs)
-            implementation(projects.composeApp)
+            implementation(projects.example.compose)
         }
     }
 }
 
 compose.desktop {
     application {
-        mainClass = libs.versions.desktopApp.mainClass.get()
+        mainClass = libs.versions.example.desktop.mainClass.get()
     }
 }
 
 // Custom build directory
-layout.buildDirectory.set(file("$rootDir/.build/DesktopApp"))
+layout.buildDirectory.set(file("$rootDir/.build/example/Desktop"))
