@@ -21,24 +21,24 @@ library-androidLibrary-namespace = "io.github.sudarshanmhasrup.localina"
 library-androidLibrary-compileSdk = "36"
 library-androidLibrary-minSdk = "21"
 
-# example:desktop-app module's configuration information
+# example:desktop module's configuration information
 example-desktop-group = "com.desktop.app"
 example-desktop-version = "1.0.0"
 example-desktop-mainClass = "com.desktop.app.MainKt"
 
-# example:web-app module's configuration information
+# example:web module's configuration information
 example-web-group = "com.web.app"
 example-web-version = "1.0.0"
 
-# compose-app module's configuration information
-composeApp-group = "com.compose.app"
-composeApp-version = "1.0.0"
-composeApp-packageOfResClass = "com.compose.app.resources"
+# example:compose module's configuration information
+example-compose-group = "com.compose.app"
+example-compose-version = "1.0.0"
+example-compose-packageOfResClass = "com.compose.app.resources"
 
-# compose-app module's android library package information
-composeApp-androidLibrary-namespace = "com.compose.app"
-composeApp-androidLibrary-compileSdk = "36"
-composeApp-androidLibrary-minSdk = "24"
+# example:compose module's android library package information
+example-compose-androidLibrary-namespace = "com.compose.app"
+example-compose-androidLibrary-compileSdk = "36"
+example-compose-androidLibrary-minSdk = "24"
 
 [libraries]
 compose-multiplatform-components-ui-tooling-preview = { module = "org.jetbrains.compose.components:components-ui-tooling-preview", version.ref = "composeMultiplatform" }
