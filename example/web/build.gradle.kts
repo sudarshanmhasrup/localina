@@ -1,3 +1,4 @@
+import org.gradle.kotlin.dsl.resources
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 import org.jetbrains.kotlin.gradle.targets.js.dsl.ExperimentalDistributionDsl
 
@@ -12,7 +13,7 @@ kotlin {
     js(IR) {
         browser {
             distribution {
-                outputDirectory = File("$rootDir/.build/WasmAppDistribution")
+                outputDirectory = File("$rootDir/.build/WebAppDistribution")
             }
         }
         binaries.executable()
@@ -22,7 +23,7 @@ kotlin {
     wasmJs {
         browser {
             distribution {
-                outputDirectory = File("$rootDir/.build/WasmAppDistribution")
+                outputDirectory = File("$rootDir/.build/WebAppDistribution")
             }
         }
         binaries.executable()
@@ -34,6 +35,10 @@ kotlin {
             implementation(projects.example.compose)
         }
     }
+}
+
+compose.resources {
+    generateResClass = never
 }
 
 // Custom build directory
