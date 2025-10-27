@@ -23,6 +23,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.compose.app.domain.model.Language
 import com.compose.app.presentation.theme.ComposeAppTheme
+import io.github.sudarshanmhasrup.localina.annoations.ExperimentalLocalinaApi
 import io.github.sudarshanmhasrup.localina.api.Locale
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
@@ -64,6 +65,7 @@ internal fun LanguageCard(
     }
 }
 
+@OptIn(ExperimentalLocalinaApi::class)
 @Preview(showBackground = true)
 @Composable
 private fun LanguageCardPreview() {

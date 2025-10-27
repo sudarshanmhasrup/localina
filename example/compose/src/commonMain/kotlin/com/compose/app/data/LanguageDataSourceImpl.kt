@@ -1,12 +1,14 @@
 package com.compose.app.data
 
 import com.compose.app.domain.model.Language
+import io.github.sudarshanmhasrup.localina.annoations.ExperimentalLocalinaApi
 import io.github.sudarshanmhasrup.localina.api.Locale
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update
 
 internal class LanguageDataSourceImpl : LanguageDataSource {
+    @OptIn(ExperimentalLocalinaApi::class)
     private val languageList = MutableStateFlow(
         value = listOf(
             Language(
@@ -34,6 +36,7 @@ internal class LanguageDataSourceImpl : LanguageDataSource {
         return languageList
     }
 
+    @OptIn(ExperimentalLocalinaApi::class)
     override fun updateSelectedLanguage(language: Language) {
         languageList.update { value ->
             value.map {
