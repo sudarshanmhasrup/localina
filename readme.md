@@ -114,6 +114,7 @@ your desired locale code.
 LocaleUpdater.updateLocale(locale = "hi")
 
 // Or change language using Locale enum
+@OptIn(ExperimentalLocalinaApi::class)
 LocaleUpdater.updateLocale(locale = Locale.Hindi)
 ```
 

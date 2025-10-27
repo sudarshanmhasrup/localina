@@ -2,6 +2,7 @@ package io.github.sudarshanmhasrup.localina.api
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
+import io.github.sudarshanmhasrup.localina.annoations.ExperimentalLocalinaApi
 
 /**
  * A singleton object that manages and updates the current locale for your Compose Multiplatform app in real time.
@@ -12,6 +13,7 @@ import androidx.compose.runtime.mutableStateOf
  * LocaleUpdater.updateLocale(locale = "hi")
  *
  * // Or change using the Locale enum
+ * @OptIn(ExperimentalLocalinaApi::class)
  * LocaleUpdater.updateLocale(locale = Locale.English)
  * ```
  */
@@ -36,6 +38,7 @@ public object LocaleUpdater {
      *
      * @param locale The language enum to switch to.
      */
+    @OptIn(ExperimentalLocalinaApi::class)
     public fun updateLocale(locale: Locale) {
         this.locale.value = locale.code
     }
