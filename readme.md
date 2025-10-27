@@ -1,3 +1,6 @@
+[![Kotlin](https://img.shields.io/badge/kotlin-2.2.21-blue.svg?logo=kotlin&logoColor=white)](http://kotlinlang.org)
+[![Compose Multiplatform](https://img.shields.io/badge/Compose_Multiplatform-1.9.1-4285F4?style=flat&logo=jetpackcompose&logoColor=white)](https://www.jetbrains.com/compose-multiplatform/)
+
 ### About this project
 
 Localization is one of the most important aspects of the user experience when building software that supports
@@ -21,7 +24,7 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             // Other dependencies will go here
-            implementation("io.github.sudarshanmhasrup.localina:localina:1.0.0-alpha")
+            implementation("io.github.sudarshanmhasrup.localina:localina:1.0.0-alpha2")
         }
     }
 }
@@ -30,7 +33,7 @@ kotlin {
 To quickly copy the dependency, you can use the following command:
 
 ```kotlin
-implementation("io.github.sudarshanmhasrup.localina:localina:1.0.0-alpha")
+implementation("io.github.sudarshanmhasrup.localina:localina:1.0.0-alpha2")
 ```
 
 If your project uses a version catalog for centralized dependency management, then add the following lines to your
@@ -39,7 +42,7 @@ If your project uses a version catalog for centralized dependency management, th
 ```
 [versions]
 # Other version declarations will go here
-localina = "1.0.0-alpha"
+localina = "1.0.0-alpha2"
 
 [libraries]
 # Other libraries declarations will go here
