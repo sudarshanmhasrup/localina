@@ -159,7 +159,7 @@ In your browser's index.html, put the following code before loading the applicat
 | Android  | `androidTarget()`                              |
 | iOS      | `iosX64()`, `iosArm64()`,`iosSimulatorArm64()` |
 | Desktop  | `jvm()`                                        |
-| Web      | `wasmJs()` `js()`                              |
+| Web      | `wasmJs()`, `js()`                             |
 
 ### Contributing
 
