@@ -42,4 +42,4 @@ compose.resources {
 }
 
 // Custom build directory
-layout.buildDirectory.set(file("$rootDir/.build/example/Web"))
+layout.buildDirectory.set(file("$rootDir/.build/example/web"))
