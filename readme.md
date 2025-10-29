@@ -94,7 +94,7 @@ commonMain/composeResources/
 #### Step 2: Wrap Your UI with LocalinaApp Composable
 
 Wrap all your UI code inside the
-[Localina](/library/src/commonMain/kotlin/io/github/sudarshanmhasrup/localina/api/LocalinaApp.kt) composable, like this:
+[LocalinaApp](/library/src/commonMain/kotlin/io/github/sudarshanmhasrup/localina/api/LocalinaApp.kt) composable, like this:
 
 ```kotlin
 @Composable
@@ -169,5 +169,5 @@ Contributions are welcome! Please feel free to open an issue or submit a pull re
 
 ### Thank you! 🙌
 
-Thank you so much for checking out the `Localina` project. If you like my work or this project, feel free to give a star
+Thank you so much for checking out the `Localina` project. If you like my work on this project, feel free to give a star
 to the repository. Happy coding!
