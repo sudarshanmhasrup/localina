@@ -17,6 +17,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.window.core.layout.WindowHeightSizeClass
+import androidx.window.core.layout.WindowSizeClass.Companion.HEIGHT_DP_MEDIUM_LOWER_BOUND
+import androidx.window.core.layout.WindowSizeClass.Companion.WIDTH_DP_MEDIUM_LOWER_BOUND
 import androidx.window.core.layout.WindowWidthSizeClass
 import com.compose.app.presentation.components.HeadingAndMessage
 import com.compose.app.presentation.components.LanguageCard
@@ -46,12 +48,9 @@ private fun LanguagePage(modifier: Modifier = Modifier) {
     val composeAppViewModel = koinViewModel<ComposeAppViewModel>()
 
     val windowSizeClass = currentWindowAdaptiveInfo().windowSizeClass
-    val windowWidth = windowSizeClass.windowWidthSizeClass
-    val windowHeight = windowSizeClass.windowHeightSizeClass
 
-    // Detect mobile landscape mode
-    val isMobileLandscapeMode = windowWidth == WindowWidthSizeClass.EXPANDED &&
-            windowHeight in listOf(WindowHeightSizeClass.COMPACT, WindowHeightSizeClass.MEDIUM)
+    val isMobileLandscapeMode  = windowSizeClass.isWidthAtLeastBreakpoint(WIDTH_DP_MEDIUM_LOWER_BOUND) &&
+            !windowSizeClass.isHeightAtLeastBreakpoint(HEIGHT_DP_MEDIUM_LOWER_BOUND)
 
     if (isMobileLandscapeMode) {
         Row(modifier = modifier) {
