@@ -12,7 +12,7 @@ group = libs.versions.example.desktop.group.get()
 version = libs.versions.example.desktop.version.get()
 
 kotlin {
-    jvm {
+    jvm("desktop") {
         java {
             @Suppress("UnstableApiUsage")
             toolchain {
