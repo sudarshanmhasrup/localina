@@ -1,4 +1,4 @@
-name: Deploy Wasm App to GitHub Pages
+name: Deploy Web App to GitHub Pages
 
 # Define trigger
 on:
