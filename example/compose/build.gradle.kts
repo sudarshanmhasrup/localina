@@ -19,16 +19,16 @@ kotlin {
         compileSdk = libs.versions.example.compose.androidLibrary.compileSdk.get().toInt()
         minSdk = libs.versions.example.compose.androidLibrary.minSdk.get().toInt()
 
-        compilations.configureEach {
-            compilerOptions.configure {
-                jvmTarget.set(
-                    JvmTarget.JVM_11
-                )
-            }
+        compilerOptions {
+            jvmTarget = JvmTarget.JVM_11
         }
     }
 
-    jvm()
+    jvm("desktop") {
+        compilerOptions {
+            jvmTarget = JvmTarget.JVM_21
+        }
+    }
 
     listOf(
         iosX64(),
