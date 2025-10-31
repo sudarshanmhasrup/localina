@@ -29,7 +29,8 @@ kotlin {
     }
 
     sourceSets {
-        jvmMain.dependencies {
+        val desktopMain by getting
+        desktopMain.dependencies {
             implementation(libs.kotlin.coroutines.swing)
             implementation(compose.desktop.currentOs)
             implementation(projects.example.compose)
