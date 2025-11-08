@@ -26,7 +26,7 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             // Other dependencies will go here
-            implementation("io.github.sudarshanmhasrup.localina:localina:1.0.0-alpha2")
+            implementation("io.github.sudarshanmhasrup.localina:localina:1.0.0-alpha3")
         }
     }
 }
@@ -35,7 +35,7 @@ kotlin {
 To quickly copy the dependency, you can use the following command:
 
 ```kotlin
-implementation("io.github.sudarshanmhasrup.localina:localina:1.0.0-alpha2")
+implementation("io.github.sudarshanmhasrup.localina:localina:1.0.0-alpha3")
 ```
 
 If your project uses a version catalog for centralized dependency management, then add the following lines to your
@@ -44,7 +44,7 @@ If your project uses a version catalog for centralized dependency management, th
 ```
 [versions]
 # Other version declarations will go here
-localina = "1.0.0-alpha2"
+localina = "1.0.0-alpha3"
 
 [libraries]
 # Other libraries declarations will go here
