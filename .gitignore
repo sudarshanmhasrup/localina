@@ -9,7 +9,6 @@
 
 # Build output folder
 .build
-build
 example/web/build
 library/build
 
