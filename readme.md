@@ -91,7 +91,7 @@ commonMain/composeResources/
 └── ... (other locale directories)
 ```
 
-#### Step 2: Wrap r=whiteth LocalinaApp Composable
+#### Step 2: Wrap your app's UI with LocalinaApp Composable
 
 Wrap all your UI code inside the
 [LocalinaApp](/library/src/commonMain/kotlin/io/github/sudarshanmhasrup/localina/api/LocalinaApp.kt) composable, like this:
