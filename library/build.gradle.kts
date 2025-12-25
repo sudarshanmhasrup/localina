@@ -20,16 +20,16 @@ kotlin {
         compileSdk = libs.versions.library.androidLibrary.compileSdk.get().toInt()
         minSdk = libs.versions.library.androidLibrary.minSdk.get().toInt()
 
-        compilations.configureEach {
-            compilerOptions.configure {
-                jvmTarget.set(
-                    JvmTarget.JVM_11
-                )
-            }
+        compilerOptions {
+            jvmTarget = JvmTarget.JVM_11
         }
     }
 
-    jvm()
+    jvm {
+        compilerOptions {
+            jvmTarget = JvmTarget.JVM_11
+        }
+    }
 
     iosX64()
     iosArm64()
