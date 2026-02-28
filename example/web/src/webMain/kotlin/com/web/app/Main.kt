@@ -10,7 +10,7 @@ import kotlinx.browser.document
 fun main() {
     initKoin()
 
-    val app = document.getElementById(elementId = "app") ?: return@onWasmReady
+    val app = document.getElementById(elementId = "app") ?: return
     ComposeViewport(viewportContainer = app) {
         val loaderContainer = document.getElementById("loader-container")
         loaderContainer?.remove()
