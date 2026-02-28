@@ -9,7 +9,7 @@ hotReload = "1.0.0"
 viewmodel = "2.9.6"
 kotlinCoroutines = "1.10.2"
 koin = "4.1.1"
-mavenPublish = "0.35.0"
+mavenPublish = "0.36.0"
 
 # library module's configuration and publishing information
 library-group = "io.github.sudarshanmhasrup.localina"
