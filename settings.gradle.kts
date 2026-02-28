@@ -37,10 +37,7 @@ dependencyResolutionManagement {
 include(":library")
 
 // Example app modules
-setOf(
-    "desktop",
-    "web",
-    "compose" // Umbrella module
-).forEach { module ->
+val exampleAppModules = setOf("desktop", "web", "compose")
+exampleAppModules.forEach { module ->
     include(":example:$module")
 }
