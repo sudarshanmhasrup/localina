@@ -1,21 +1,21 @@
 name: Deploy Web App to GitHub Pages
 
-# Define trigger
+# Trigger
 on:
     push:
         branches:
             - main
 
-# Define permissions
+# Permissions
 permissions:
     contents: write
 
-# Define jobs
+# Jobs
 jobs:
     build-and-deploy:
         runs-on: ubuntu-latest
 
-        # Define steps to build, commit and deploy the Kotlin/Wasm app
+        # Steps to build, commit and deploy the Kotlin/Wasm app
         steps:
             -   name: Checkout repository
                 uses: actions/checkout@v4
