@@ -11,8 +11,12 @@ import org.jetbrains.skiko.wasm.onWasmReady
 fun main() {
     initKoin()
     onWasmReady {
-        val body = document.body ?: return@onWasmReady
-        ComposeViewport(viewportContainer = body) {
+        val app = document.getElementById(elementId = "app") ?: return@onWasmReady
+
+        ComposeViewport(viewportContainer = app) {
+            val loaderContainer = document.getElementById("loader-container")
+            loaderContainer?.remove()
+
             WebApp()
         }
     }
