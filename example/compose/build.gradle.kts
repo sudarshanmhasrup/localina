@@ -1,4 +1,3 @@
-import com.android.build.api.dsl.androidLibrary
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
@@ -13,7 +12,6 @@ group = libs.versions.example.compose.group.get()
 version = libs.versions.example.compose.version.get()
 
 kotlin {
-    @Suppress("UnstableApiUsage")
     androidLibrary {
         namespace = libs.versions.example.compose.androidLibrary.namespace.get()
         compileSdk = libs.versions.example.compose.androidLibrary.compileSdk.get().toInt()
