@@ -8,6 +8,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.compose.app.presentation.extensions.headingAndMessageModifier
 import com.compose.app.presentation.theme.ComposeAppTheme
@@ -16,7 +17,6 @@ import com.compose.app.resources.language_page_heading
 import com.compose.app.resources.language_page_message
 import org.jetbrains.compose.resources.StringResource
 import org.jetbrains.compose.resources.stringResource
-import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable
 internal fun HeadingAndMessage(
