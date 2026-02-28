@@ -1,4 +1,3 @@
-import org.gradle.kotlin.dsl.resources
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 import org.jetbrains.kotlin.gradle.targets.js.dsl.ExperimentalDistributionDsl
 
@@ -31,14 +30,9 @@ kotlin {
 
     sourceSets {
         wasmJsMain.dependencies {
-            implementation(libs.compose.multiplatform.ui)
             implementation(projects.example.compose)
         }
     }
-}
-
-compose.resources {
-    generateResClass = never
 }
 
 // Custom build directory
