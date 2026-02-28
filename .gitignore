@@ -10,6 +10,7 @@
 # Build output folder
 .build
 example/web/build
+example/compose/build
 library/build
 
 # Local properties
