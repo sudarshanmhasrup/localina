@@ -25,6 +25,7 @@ import io.github.sudarshanmhasrup.localina.internal.LocalAppLocale
  *
  * @param content The composable content of your app.
  */
+@Suppress("RedundantVisibilityModifier")
 @Composable
 public fun LocalinaApp(content: @Composable () -> Unit) {
     val currentLocale = LocaleUpdater.getLocale().value

@@ -17,6 +17,7 @@ import io.github.sudarshanmhasrup.localina.annoations.ExperimentalLocalinaApi
  * LocaleUpdater.updateLocale(locale = Locale.English)
  * ```
  */
+@Suppress("RedundantVisibilityModifier")
 public object LocaleUpdater {
     private var locale = mutableStateOf<String?>(null)
 
