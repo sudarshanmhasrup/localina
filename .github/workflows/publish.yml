@@ -1,17 +1,17 @@
 name: Publish to Maven Central
 
-# Define trigger
+# Trigger
 on:
     release:
         types: [ released, prereleased ]
 
-# Define jobs
+# Jobs
 jobs:
     publish:
         name: Release build and publish
         runs-on: macOS-latest
 
-        # Define steps to build, commit and deploy the Kotlin/Wasm app
+        # Steps to build and publish the library to Maven Central
         steps:
             -   name: Check out code
                 uses: actions/checkout@v4
