@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<!--suppress ALL -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Localina Web Example</title>
-    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <script>
         var currentLanguagesImplementation = Object.getOwnPropertyDescriptor(Navigator.prototype, "languages");
         var newLanguagesImplementation = Object.assign({}, currentLanguagesImplementation, {
@@ -20,8 +19,8 @@
 
         Object.defineProperty(Navigator.prototype, "languages", newLanguagesImplementation)
     </script>
-    <script src="skiko.js"></script>
-    <script type="application/javascript" src="web.js"></script>
+    <div class="app" id="app"></div>
+    <script type="application/javascript" src="./web-wasm.js"></script>
 </head>
 <body></body>
 </html>
