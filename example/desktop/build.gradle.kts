@@ -13,10 +13,8 @@ version = libs.versions.example.desktop.version.get()
 kotlin {
     jvm("desktop") {
         java {
-            @Suppress("UnstableApiUsage")
             toolchain {
                 languageVersion.set(JavaLanguageVersion.of("21"))
-                vendor.set(JvmVendorSpec.JETBRAINS)
             }
             sourceCompatibility = JavaVersion.VERSION_21
             targetCompatibility = JavaVersion.VERSION_21
@@ -38,9 +36,6 @@ kotlin {
 }
 
 compose {
-    resources {
-        generateResClass = never
-    }
     desktop {
         application {
             mainClass = libs.versions.example.desktop.mainClass.get()
