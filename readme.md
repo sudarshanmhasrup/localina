@@ -1,7 +1,7 @@
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.sudarshanmhasrup.localina/localina.svg?label=Maven%20Central)](https://search.maven.org/artifact/io.github.sudarshanmhasrup.localina/localina)
 ![Alpha](https://img.shields.io/badge/status-alpha-orange)
 [![Kotlin](https://img.shields.io/badge/kotlin-2.3.10-blue.svg?logo=kotlin&logoColor=original)](http://kotlinlang.org)
-[![Compose Multiplatform](https://img.shields.io/badge/Compose_Multiplatform-1.9.1-4285F4?style=flat&logo=jetpackcompose&logoColor=original)](https://www.jetbrains.com/compose-multiplatform/)
+[![Compose Multiplatform](https://img.shields.io/badge/Compose_Multiplatform-1.10.1-4285F4?style=flat&logo=jetpackcompose&logoColor=original)](https://www.jetbrains.com/compose-multiplatform/)
 
 ### About this project
 
