@@ -1,6 +1,6 @@
 [versions]
 # Library and plugin versions
-kotlin = "2.3.0"
+kotlin = "2.3.10"
 androidGradlePlugin = "8.13.2"
 composeMultiplatform = "1.9.3"
 material3 = "1.9.0"
