@@ -14,7 +14,7 @@ mavenPublish = "0.36.0"
 # library module's configuration and publishing information
 library-group = "io.github.sudarshanmhasrup.localina"
 library-artifactId = "localina"
-library-version = "1.0.0-alpha3"
+library-version = "1.0.0-beta1"
 
 # library module's android library package information
 library-androidLibrary-namespace = "io.github.sudarshanmhasrup.localina"
