@@ -1,11 +1,40 @@
 * {
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
-}
-
-html, body {
+    padding: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+}
+
+.loader-container {
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 5px solid black;
+    border-bottom-color: transparent;
+    animation: rotation 1s linear infinite;
+}
+
+.app {
+    position: fixed;
+    z-index: 0;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
