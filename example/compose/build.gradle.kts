@@ -50,22 +50,21 @@ kotlin {
     }
 
     sourceSets {
-        androidMain.dependencies {
-            implementation(libs.compose.multiplatform.ui.tooling.preview)
-        }
         commonMain.dependencies {
             implementation(libs.bundles.koin.multiplatform)
             implementation(libs.lifecycle.runtime.compose)
             implementation(libs.compose.multiplatform.viewmodel)
-            implementation(libs.material3.adaptive)
             implementation(libs.compose.multiplatform.material3)
             implementation(libs.compose.multiplatform.ui)
-            implementation(libs.compose.multiplatform.foundation)
             implementation(libs.compose.multiplatform.resources)
-            implementation(libs.compose.multiplatform.components.ui.tooling.preview)
+            implementation(libs.compose.multiplatform.ui.tooling.preview)
             implementation(projects.library)
         }
     }
+}
+
+dependencies {
+    androidRuntimeClasspath(libs.compose.multiplatform.ui.tooling)
 }
 
 compose.resources {
