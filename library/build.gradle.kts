@@ -13,7 +13,7 @@ group = libs.versions.library.group.get()
 version = libs.versions.library.version.get()
 
 kotlin {
-    androidLibrary {
+    android {
         namespace = libs.versions.library.androidLibrary.namespace.get()
         compileSdk = libs.versions.library.androidLibrary.compileSdk.get().toInt()
         minSdk = libs.versions.library.androidLibrary.minSdk.get().toInt()
