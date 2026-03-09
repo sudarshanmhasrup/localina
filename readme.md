@@ -1,7 +1,7 @@
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.sudarshanmhasrup.localina/localina.svg?label=Maven%20Central)](https://search.maven.org/artifact/io.github.sudarshanmhasrup.localina/localina)
 ![Beta](https://img.shields.io/badge/status-beta-yellow)
 [![Kotlin](https://img.shields.io/badge/kotlin-2.3.10-blue.svg?logo=kotlin&logoColor=original)](http://kotlinlang.org)
-[![Compose Multiplatform](https://img.shields.io/badge/Compose_Multiplatform-1.10.1-4285F4?style=flat&logo=jetpackcompose&logoColor=original)](https://www.jetbrains.com/compose-multiplatform/)
+[![Compose Multiplatform](https://img.shields.io/badge/Compose_Multiplatform-1.10.2-4285F4?style=flat&logo=jetpackcompose&logoColor=original)](https://www.jetbrains.com/compose-multiplatform/)
 
 ### About this project
 
@@ -26,7 +26,7 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             // Other dependencies will go here
-            implementation("io.github.sudarshanmhasrup.localina:localina:1.0.0-beta1")
+            implementation("io.github.sudarshanmhasrup.localina:localina:1.0.0-beta2")
         }
     }
 }
@@ -35,7 +35,7 @@ kotlin {
 To quickly copy the dependency, you can use the following command:
 
 ```kotlin
-implementation("io.github.sudarshanmhasrup.localina:localina:1.0.0-beta1")
+implementation("io.github.sudarshanmhasrup.localina:localina:1.0.0-beta2")
 ```
 
 If your project uses a version catalog for centralized dependency management, then add the following lines to your
@@ -44,7 +44,7 @@ If your project uses a version catalog for centralized dependency management, th
 ```
 [versions]
 # Other version declarations will go here
-localina = "1.0.0-beta1"
+localina = "1.0.0-beta2"
 
 [libraries]
 # Other libraries declarations will go here
