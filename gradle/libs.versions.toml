@@ -4,8 +4,8 @@ kotlin = "2.3.10"
 agp = "9.1.0"
 composeMultiplatform = "1.10.2"
 material3 = "1.9.0"
-viewmodel = "2.9.6"
-kotlinCoroutines = "1.10.2"
+lifecycle = "2.9.6"
+coroutines = "1.10.2"
 koin = "4.1.1"
 mavenPublish = "0.36.0"
 
@@ -49,15 +49,18 @@ compose-multiplatform-resources = { module = "org.jetbrains.compose.components:c
 compose-multiplatform-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "composeMultiplatform" }
 compose-multiplatform-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "composeMultiplatform" }
 compose-multiplatform-material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "material3" }
-compose-multiplatform-viewmodel = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "viewmodel" }
-lifecycle-runtime-compose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "viewmodel" }
-kotlin-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "kotlinCoroutines" }
+compose-multiplatform-viewmodel = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+lifecycle-runtime-compose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
+kotlin-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "coroutines" }
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin" }
 koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel", version.ref = "koin" }
 
 [bundles]
+compose-multiplatform = ["compose-multiplatform-ui-tooling-preview", "compose-multiplatform-resources", "compose-multiplatform-runtime",
+    "compose-multiplatform-ui", "compose-multiplatform-material3"
+]
 koin-multiplatform = ["koin-core", "koin-compose", "koin-compose-viewmodel"]
 koin-android = ["koin-core", "koin-android"]
 
