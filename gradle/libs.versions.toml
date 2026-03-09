@@ -58,9 +58,10 @@ koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin" }
 koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel", version.ref = "koin" }
 
 [bundles]
-compose-multiplatform = ["compose-multiplatform-ui-tooling-preview", "compose-multiplatform-resources", "compose-multiplatform-runtime",
+compose-multiplatform-core = ["compose-multiplatform-ui-tooling-preview", "compose-multiplatform-resources", "compose-multiplatform-runtime",
     "compose-multiplatform-ui", "compose-multiplatform-material3"
 ]
+compose-multiplatform-lifecyle = ["compose-multiplatform-viewmodel", "lifecycle-runtime-compose"]
 koin-multiplatform = ["koin-core", "koin-compose", "koin-compose-viewmodel"]
 koin-android = ["koin-core", "koin-android"]
 
