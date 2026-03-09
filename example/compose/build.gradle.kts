@@ -53,11 +53,8 @@ kotlin {
         commonMain.dependencies {
             implementation(libs.bundles.koin.multiplatform)
             implementation(libs.lifecycle.runtime.compose)
-            implementation(libs.compose.multiplatform.viewmodel)
-            implementation(libs.compose.multiplatform.material3)
-            implementation(libs.compose.multiplatform.ui)
-            implementation(libs.compose.multiplatform.resources)
-            implementation(libs.compose.multiplatform.ui.tooling.preview)
+            implementation(libs.bundles.compose.multiplatform.lifecyle)
+            implementation(libs.bundles.compose.multiplatform.core)
             implementation(projects.library)
         }
     }
