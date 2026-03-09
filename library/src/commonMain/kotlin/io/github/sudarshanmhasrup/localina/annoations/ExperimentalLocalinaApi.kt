@@ -19,7 +19,7 @@ import kotlin.annotation.AnnotationTarget.VALUE_PARAMETER
  * Using these APIs in production code is not recommended.
  */
 @Suppress("ExperimentalAnnotationRetention","RedundantVisibilityModifier")
-@RequiresOptIn(level = RequiresOptIn.Level.ERROR)
+@RequiresOptIn
 @MustBeDocumented
 @Target(
     CLASS,
