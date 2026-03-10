@@ -16,9 +16,8 @@ internal fun Modifier.backgroundModifier(backgroundColor: Color): Modifier {
         .background(color = backgroundColor)
 }
 
-internal fun Modifier.headingAndMessageModifier(isMobileLandscapeMode: Boolean = false): Modifier {
-    val topPadding = if (isMobileLandscapeMode) 20.dp else 60.dp
+internal fun Modifier.headingAndMessageModifier(): Modifier {
     return this
         .fillMaxWidth()
-        .padding(start = 20.dp, end = 20.dp, top = topPadding, bottom = 20.dp)
+        .padding(start = 20.dp, end = 20.dp, top = 60.dp, bottom = 20.dp)
 }
