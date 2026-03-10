@@ -17,6 +17,8 @@ kotlin {
         compileSdk = libs.versions.example.compose.androidLibrary.compileSdk.get().toInt()
         minSdk = libs.versions.example.compose.androidLibrary.minSdk.get().toInt()
 
+        androidResources.enable = true
+
         compilerOptions {
             jvmTarget = JvmTarget.JVM_11
         }
@@ -65,6 +67,10 @@ dependencies {
 }
 
 compose.resources {
+    customDirectory(
+        sourceSetName = "commonMain",
+        directoryProvider = provider { layout.projectDirectory.dir("src/commonMain/resources") }
+    )
     packageOfResClass = libs.versions.example.compose.packageOfResClass.get()
 }
 
