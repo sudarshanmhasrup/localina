@@ -20,12 +20,12 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.input.pointer.PointerIcon
 import androidx.compose.ui.input.pointer.pointerHoverIcon
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.compose.app.domain.model.Language
 import com.compose.app.presentation.theme.ComposeAppTheme
 import io.github.sudarshanmhasrup.localina.annoations.ExperimentalLocalinaApi
 import io.github.sudarshanmhasrup.localina.api.Locale
-import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable
 internal fun LanguageCard(
