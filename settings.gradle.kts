@@ -37,7 +37,7 @@ dependencyResolutionManagement {
 include(":library")
 
 // Example app modules
-val exampleAppModules = setOf("desktop", "web", "compose")
+val exampleAppModules = setOf("android", "desktop", "web", "compose")
 exampleAppModules.forEach { module ->
     include(":example:$module")
 }
