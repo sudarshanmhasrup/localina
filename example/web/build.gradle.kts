@@ -7,6 +7,10 @@ plugins {
     alias(libs.plugins.compose.compiler)
 }
 
+group = libs.versions.example.web.group.get()
+version = libs.versions.example.web.version.get()
+
+
 kotlin {
     @OptIn(ExperimentalDistributionDsl::class)
     js(IR) {
