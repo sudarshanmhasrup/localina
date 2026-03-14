@@ -23,6 +23,10 @@ library-androidLibrary-minSdk = "21"
 example-android-group = "com.android.app"
 example-android-version = "1.0.0"
 
+# example:android module's configuration information
+example-android-namespace = "com.android.app"
+example-android-compileSdk = "36"
+
 # example:desktop module's configuration information
 example-desktop-group = "com.desktop.app"
 example-desktop-version = "1.0.0"
