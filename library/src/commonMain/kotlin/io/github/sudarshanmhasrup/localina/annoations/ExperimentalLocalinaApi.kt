@@ -18,7 +18,7 @@ import kotlin.annotation.AnnotationTarget.VALUE_PARAMETER
  * Experimental APIs can be changed or removed in future releases without prior notice.
  * Using these APIs in production code is not recommended.
  */
-@Suppress("ExperimentalAnnotationRetention","RedundantVisibilityModifier")
+@Suppress("ExperimentalAnnotationRetention", "RedundantVisibilityModifier")
 @RequiresOptIn
 @MustBeDocumented
 @Target(
