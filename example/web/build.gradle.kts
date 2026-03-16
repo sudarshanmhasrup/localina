@@ -12,7 +12,7 @@ version = libs.versions.example.web.version.get()
 
 kotlin {
     @OptIn(ExperimentalDistributionDsl::class)
-    js(IR) {
+    js {
         browser {
             distribution {
                 outputDirectory = File("$rootDir/.build/WebAppDistribution")
