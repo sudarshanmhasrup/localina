@@ -37,5 +37,9 @@ android {
     }
 }
 
+dependencies {
+    implementation(libs.activity)
+}
+
 // Custom build directory
 layout.buildDirectory.set(file("$rootDir/.build/example/desktop"))
