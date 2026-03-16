@@ -26,6 +26,7 @@ example-android-version = "1.0.0"
 # example:android module's android app package information
 example-android-namespace = "com.android.app"
 example-android-compileSdk = "36"
+example-android-applicationId = "com.android.app"
 example-android-minSdk = "21"
 example-android-targetSdk = "36"
 example-android-versionCode = "1"
