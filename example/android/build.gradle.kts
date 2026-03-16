@@ -20,6 +20,11 @@ android {
         versionName = libs.versions.example.android.versionName.get()
     }
 
+    buildTypes {
+        release {
+            isMinifyEnabled = true
+        }
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
