@@ -2,6 +2,7 @@
 # Library and plugin versions
 kotlin = "2.3.10"
 agp = "9.1.0"
+activity = "1.13.0"
 composeMultiplatform = "1.10.2"
 material3 = "1.9.0"
 lifecycle = "2.9.6"
@@ -56,6 +57,7 @@ example-compose-androidLibrary-compileSdk = "36"
 example-compose-androidLibrary-minSdk = "24"
 
 [libraries]
+activity = { module = "androidx.activity:activity-compose", version.ref = "activity" }
 compose-multiplatform-ui-tooling = { module = "org.jetbrains.compose.ui:ui-tooling", version.ref = "composeMultiplatform" }
 compose-multiplatform-ui-tooling-preview = { module = "org.jetbrains.compose.ui:ui-tooling-preview", version.ref = "composeMultiplatform" }
 compose-multiplatform-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "composeMultiplatform" }
