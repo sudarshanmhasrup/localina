@@ -98,6 +98,7 @@ Wrap all your UI code inside the
 this:
 
 ```kotlin
+@Suppress("FunctionName")
 @Composable
 fun App() {
     LocalinaApp {
