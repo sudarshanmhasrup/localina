@@ -8,6 +8,14 @@ plugins {
 group = libs.versions.example.android.group.get()
 version = libs.versions.example.android.version.get()
 
+kotlin {
+    target {
+        compilerOptions {
+            jvmTarget = JvmTarget.JVM_11
+        }
+    }
+}
+
 android {
     namespace = libs.versions.example.android.namespace.get()
     compileSdk = libs.versions.example.android.compileSdk.get().toInt()
@@ -24,13 +32,6 @@ android {
         release {
             isMinifyEnabled = true
         }
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-    kotlin.compilerOptions {
-        jvmTarget = JvmTarget.JVM_11
     }
     buildFeatures {
         compose = true
