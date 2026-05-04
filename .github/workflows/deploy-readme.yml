@@ -28,7 +28,7 @@ jobs:
                   
                   EOF
                   cat readme.md >> site/index.md
-                  echo 'theme: minima' > site/_config.yml
+                  echo 'theme: jekyll-theme-cayman' > site/_config.yml
 
             - name: "Deploy to gh-pages branch"
               uses: peaceiris/actions-gh-pages@v4
