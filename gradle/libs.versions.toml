@@ -1,6 +1,6 @@
 [versions]
 # Library and plugin versions
-kotlin = "2.3.10"
+kotlin = "2.3.21"
 agp = "9.1.0"
 activity = "1.13.0"
 composeMultiplatform = "1.10.2"
