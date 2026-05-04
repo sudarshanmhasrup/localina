@@ -31,6 +31,7 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = true
+            isShrinkResources = true
         }
     }
     buildFeatures {
@@ -44,5 +45,4 @@ dependencies {
     implementation(projects.example.compose)
 }
 
-// Custom build directory
 layout.buildDirectory.set(file("$rootDir/.build/example/desktop"))
