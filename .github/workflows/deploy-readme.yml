@@ -1,0 +1,38 @@
+name: "Deploy README to GitHub Pages"
+
+on:
+    push:
+        branches:
+            - main
+    workflow_dispatch:
+
+permissions:
+    contents: write
+
+jobs:
+    deploy-readme:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: "Checkout main branch"
+              uses: actions/checkout@v5
+
+            - name: "Create Pages site from README"
+              run: |
+                  mkdir -p site
+                  cat <<'EOF' > site/index.md
+                  ---
+                  layout: default
+                  title: Localina
+                  ---
+                  
+                  EOF
+                  cat README.md >> site/index.md
+                  echo 'theme: minima' > site/_config.yml
+
+            - name: "Deploy to gh-pages branch"
+              uses: peaceiris/actions-gh-pages@v5
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: site
+                  publish_branch: gh-pages
