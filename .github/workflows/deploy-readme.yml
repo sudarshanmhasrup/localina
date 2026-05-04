@@ -27,7 +27,7 @@ jobs:
                   ---
                   
                   EOF
-                  cat README.md >> site/index.md
+                  cat readme.md >> site/index.md
                   echo 'theme: minima' > site/_config.yml
 
             - name: "Deploy to gh-pages branch"
