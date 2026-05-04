@@ -4,6 +4,7 @@ kotlin = "2.3.21"
 coroutines = "1.10.2"
 agp = "9.2.0"
 activity = "1.13.0"
+splashify = "1.0.0-alpha1"
 composeMultiplatform = "1.10.3"
 material3 = "1.9.0"
 lifecycle = "2.10.0"
@@ -36,7 +37,7 @@ example-android-versionName = "1.0.0"
 # example:desktop module's configuration information
 example-desktop-group = "com.desktop.app"
 example-desktop-version = "1.0.0"
-example-desktop-mainClass = "com.desktop.app.MainKt"
+example-desktop-mainClass = "com.desktop.app.MainAppKt"
 
 # example:desktop module's distribution information
 example-desktop-distributionPackageName = "Localina"
@@ -59,6 +60,7 @@ example-compose-androidLibrary-minSdk = "24"
 [libraries]
 kotlin-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "coroutines" }
 activity = { module = "androidx.activity:activity-compose", version.ref = "activity" }
+splashify = { module = "io.github.sudarshanmhasrup.splashify:splashify", version.ref = "splashify" }
 compose-multiplatform-ui-tooling = { module = "org.jetbrains.compose.ui:ui-tooling", version.ref = "composeMultiplatform" }
 compose-multiplatform-ui-tooling-preview = { module = "org.jetbrains.compose.ui:ui-tooling-preview", version.ref = "composeMultiplatform" }
 compose-multiplatform-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "composeMultiplatform" }
