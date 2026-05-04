@@ -7,5 +7,4 @@ plugins {
     alias(libs.plugins.maven.publish) apply false
 }
 
-// Custom build directory
 layout.buildDirectory.set(file("$rootDir/.build/project"))
