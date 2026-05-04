@@ -1,31 +1,28 @@
-name: Publish to Maven Central
+name: "Publish Library to MavenCentral"
 
-# Trigger
 on:
     release:
         types: [ released, prereleased ]
 
-# Jobs
 jobs:
     publish:
-        name: Release build and publish
+        name: "Build and release the library"
         runs-on: macOS-latest
 
-        # Steps to build and publish the library to Maven Central
         steps:
-            -   name: Check out code
-                uses: actions/checkout@v4
+            -   name: "Checkout the repository"
+                uses: actions/checkout@v5
 
-            -   name: Set up JDK 21
-                uses: actions/setup-java@v4
+            -   name: "Setup JDK 21"
+                uses: actions/setup-java@v5
                 with:
-                    distribution: 'zulu'
+                    distribution: 'temurin'
                     java-version: 21
 
-            -   name: Make Gradle Wrapper Executable
+            -   name: "Make Gradle Wrapper Executable"
                 run: chmod +x ./gradlew
 
-            -   name: Publish to MavenCentral
+            -   name: "Publish to MavenCentral"
                 run: ./gradlew publishToMavenCentral --no-configuration-cache
                 env:
                     ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
