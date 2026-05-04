@@ -9,6 +9,7 @@ lifecycle = "2.9.6"
 coroutines = "1.10.2"
 koin = "4.1.1"
 mavenPublish = "0.36.0"
+versions = "0.54.0"
 
 # library module's configuration and publishing information
 library-group = "io.github.sudarshanmhasrup.localina"
@@ -87,3 +88,4 @@ android-kotlin-multiplatform-library = { id = "com.android.kotlin.multiplatform.
 compose-multiplatform = { id = "org.jetbrains.compose", version.ref = "composeMultiplatform" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "mavenPublish" }
+versions = { id = "com.github.ben-manes.versions", version.ref = "versions" }
