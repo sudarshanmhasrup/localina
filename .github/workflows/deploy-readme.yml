@@ -31,7 +31,7 @@ jobs:
                   echo 'theme: minima' > site/_config.yml
 
             - name: "Deploy to gh-pages branch"
-              uses: peaceiris/actions-gh-pages@v5
+              uses: peaceiris/actions-gh-pages@v4
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
                   publish_dir: site
