@@ -65,6 +65,7 @@ compose-multiplatform-ui-tooling-preview = { module = "org.jetbrains.compose.ui:
 compose-multiplatform-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "composeMultiplatform" }
 compose-multiplatform-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "composeMultiplatform" }
 compose-multiplatform-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "composeMultiplatform" }
+compose-multiplatform-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "composeMultiplatform" }
 compose-multiplatform-material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "material3" }
 compose-multiplatform-viewmodel = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
 lifecycle-runtime-compose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
@@ -74,8 +75,13 @@ koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin" }
 koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel", version.ref = "koin" }
 
 [bundles]
-compose-multiplatform-core = ["compose-multiplatform-ui-tooling-preview", "compose-multiplatform-resources", "compose-multiplatform-runtime",
-    "compose-multiplatform-ui", "compose-multiplatform-material3"
+compose-multiplatform = [
+    "compose-multiplatform-ui-tooling-preview",
+    "compose-multiplatform-resources",
+    "compose-multiplatform-runtime",
+    "compose-multiplatform-ui",
+    "compose-multiplatform-foundation",
+    "compose-multiplatform-material3"
 ]
 compose-multiplatform-lifecyle = ["compose-multiplatform-viewmodel", "lifecycle-runtime-compose"]
 koin-multiplatform = ["koin-core", "koin-compose", "koin-compose-viewmodel"]
