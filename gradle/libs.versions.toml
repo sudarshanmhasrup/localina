@@ -1,23 +1,23 @@
 [versions]
 # Library and plugin versions
-kotlin = "2.3.10"
-agp = "9.1.0"
-activity = "1.13.0"
-composeMultiplatform = "1.10.2"
-material3 = "1.9.0"
-lifecycle = "2.9.6"
+kotlin = "2.3.21"
 coroutines = "1.10.2"
-koin = "4.1.1"
+agp = "9.2.0"
+activity = "1.13.0"
+composeMultiplatform = "1.10.3"
+material3 = "1.9.0"
+lifecycle = "2.10.0"
+koin = "4.2.1"
 mavenPublish = "0.36.0"
 
 # library module's configuration and publishing information
 library-group = "io.github.sudarshanmhasrup.localina"
 library-artifactId = "localina"
-library-version = "1.0.0-beta2"
+library-version = "1.0.0-beta3"
 
 # library module's android library package information
 library-androidLibrary-namespace = "io.github.sudarshanmhasrup.localina"
-library-androidLibrary-compileSdk = "36"
+library-androidLibrary-compileSdk = "37"
 library-androidLibrary-minSdk = "21"
 
 # example:android module's configuration information
@@ -26,10 +26,10 @@ example-android-version = "1.0.0"
 
 # example:android module's android app package information
 example-android-namespace = "com.android.app"
-example-android-compileSdk = "36"
+example-android-compileSdk = "37"
 example-android-applicationId = "com.android.app"
 example-android-minSdk = "24"
-example-android-targetSdk = "36"
+example-android-targetSdk = "37"
 example-android-versionCode = "1"
 example-android-versionName = "1.0.0"
 
@@ -53,28 +53,34 @@ example-compose-packageOfResClass = "com.compose.app.resources"
 
 # example:compose module's android library package information
 example-compose-androidLibrary-namespace = "com.compose.app"
-example-compose-androidLibrary-compileSdk = "36"
+example-compose-androidLibrary-compileSdk = "37"
 example-compose-androidLibrary-minSdk = "24"
 
 [libraries]
+kotlin-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "coroutines" }
 activity = { module = "androidx.activity:activity-compose", version.ref = "activity" }
 compose-multiplatform-ui-tooling = { module = "org.jetbrains.compose.ui:ui-tooling", version.ref = "composeMultiplatform" }
 compose-multiplatform-ui-tooling-preview = { module = "org.jetbrains.compose.ui:ui-tooling-preview", version.ref = "composeMultiplatform" }
 compose-multiplatform-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "composeMultiplatform" }
 compose-multiplatform-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "composeMultiplatform" }
 compose-multiplatform-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "composeMultiplatform" }
+compose-multiplatform-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "composeMultiplatform" }
 compose-multiplatform-material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "material3" }
 compose-multiplatform-viewmodel = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
 lifecycle-runtime-compose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
-kotlin-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "coroutines" }
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin" }
 koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel", version.ref = "koin" }
 
 [bundles]
-compose-multiplatform-core = ["compose-multiplatform-ui-tooling-preview", "compose-multiplatform-resources", "compose-multiplatform-runtime",
-    "compose-multiplatform-ui", "compose-multiplatform-material3"
+compose-multiplatform = [
+    "compose-multiplatform-ui-tooling-preview",
+    "compose-multiplatform-resources",
+    "compose-multiplatform-runtime",
+    "compose-multiplatform-ui",
+    "compose-multiplatform-foundation",
+    "compose-multiplatform-material3"
 ]
 compose-multiplatform-lifecyle = ["compose-multiplatform-viewmodel", "lifecycle-runtime-compose"]
 koin-multiplatform = ["koin-core", "koin-compose", "koin-compose-viewmodel"]

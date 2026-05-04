@@ -8,9 +8,8 @@ import io.github.sudarshanmhasrup.localina.annoations.ExperimentalLocalinaApi
  *
  * @property code The two-letter ISO 639-1 language code for the locale
  */
-@Suppress("RedundantVisibilityModifier")
 @ExperimentalLocalinaApi
-public enum class Locale(val code: String) {
+enum class Locale(val code: String) {
     English(code = "en"),
     Marathi(code = "mr"),
     Hindi(code = "hi")
