@@ -18,7 +18,7 @@ library-version = "1.0.0-beta2"
 
 # library module's android library package information
 library-androidLibrary-namespace = "io.github.sudarshanmhasrup.localina"
-library-androidLibrary-compileSdk = "36"
+library-androidLibrary-compileSdk = "37"
 library-androidLibrary-minSdk = "21"
 
 # example:android module's configuration information
@@ -27,10 +27,10 @@ example-android-version = "1.0.0"
 
 # example:android module's android app package information
 example-android-namespace = "com.android.app"
-example-android-compileSdk = "36"
+example-android-compileSdk = "37"
 example-android-applicationId = "com.android.app"
 example-android-minSdk = "24"
-example-android-targetSdk = "36"
+example-android-targetSdk = "37"
 example-android-versionCode = "1"
 example-android-versionName = "1.0.0"
 
@@ -54,7 +54,7 @@ example-compose-packageOfResClass = "com.compose.app.resources"
 
 # example:compose module's android library package information
 example-compose-androidLibrary-namespace = "com.compose.app"
-example-compose-androidLibrary-compileSdk = "36"
+example-compose-androidLibrary-compileSdk = "37"
 example-compose-androidLibrary-minSdk = "24"
 
 [libraries]
