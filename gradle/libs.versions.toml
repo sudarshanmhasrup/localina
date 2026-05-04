@@ -1,12 +1,12 @@
 [versions]
 # Library and plugin versions
 kotlin = "2.3.21"
+coroutines = "1.10.2"
 agp = "9.2.0"
 activity = "1.13.0"
 composeMultiplatform = "1.10.2"
 material3 = "1.9.0"
 lifecycle = "2.9.6"
-coroutines = "1.10.2"
 koin = "4.1.1"
 mavenPublish = "0.36.0"
 versions = "0.54.0"
@@ -58,6 +58,7 @@ example-compose-androidLibrary-compileSdk = "37"
 example-compose-androidLibrary-minSdk = "24"
 
 [libraries]
+kotlin-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "coroutines" }
 activity = { module = "androidx.activity:activity-compose", version.ref = "activity" }
 compose-multiplatform-ui-tooling = { module = "org.jetbrains.compose.ui:ui-tooling", version.ref = "composeMultiplatform" }
 compose-multiplatform-ui-tooling-preview = { module = "org.jetbrains.compose.ui:ui-tooling-preview", version.ref = "composeMultiplatform" }
@@ -67,7 +68,6 @@ compose-multiplatform-ui = { module = "org.jetbrains.compose.ui:ui", version.ref
 compose-multiplatform-material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "material3" }
 compose-multiplatform-viewmodel = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
 lifecycle-runtime-compose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
-kotlin-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "coroutines" }
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin" }
