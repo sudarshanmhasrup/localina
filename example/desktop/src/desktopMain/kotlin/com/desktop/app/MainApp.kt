@@ -7,7 +7,7 @@ import io.github.sudarshanmhasrup.splashify.SplashifyApp
 fun main() {
     initKoin()
     application {
-        SplashifyApp(splashScreen = ::SplashScreen) {
+        SplashifyApp(splashScreen = { SplashScreen() }) {
             MainWindow()
         }
     }
