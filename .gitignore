@@ -15,3 +15,7 @@ library/build
 
 # Local properties
 local.properties
+
+# XCode files and folders
+*.xcuserdata/
+*.xcuserstate
