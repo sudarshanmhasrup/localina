@@ -72,5 +72,3 @@ compose.resources {
     )
     packageOfResClass = libs.versions.example.compose.packageOfResClass.get()
 }
-
-layout.buildDirectory.set(file("$rootDir/.build/example/compose"))
