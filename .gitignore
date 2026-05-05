@@ -17,5 +17,5 @@ library/build
 local.properties
 
 # XCode files and folders
-*.xcuserdata/
-*.xcuserstate
+**/xcuserdata/
+**/*.xcuserstate
