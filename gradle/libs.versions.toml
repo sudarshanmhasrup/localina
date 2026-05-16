@@ -2,7 +2,7 @@
 # Library and plugin versions
 kotlin = "2.3.21"
 coroutines = "1.11.0"
-agp = "9.2.0"
+agp = "9.2.1"
 activity = "1.13.0"
 splashify = "1.0.0-alpha1"
 composeMultiplatform = "1.11.0"
