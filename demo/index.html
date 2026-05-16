@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Localina Web Example</title>
+        <link rel="stylesheet" href="./styles.css">
+        <script>
+            var currentLanguagesImplementation = Object.getOwnPropertyDescriptor(Navigator.prototype, "languages");
+            var newLanguagesImplementation = Object.assign({}, currentLanguagesImplementation, {
+                get: function () {
+                    if (window.__customLocale) {
+                        return [window.__customLocale];
+                    } else {
+                        return currentLanguagesImplementation.get.apply(this);
+                    }
+                }
+            });
+
+            Object.defineProperty(Navigator.prototype, "languages", newLanguagesImplementation)
+        </script>
+    </head>
+    <body>
+        <div class="loader-container" id="loader-container">
+            <span class="loader" id="loader"></span>
+        </div>
+        <div class="app" id="app"></div>
+        <script type="application/javascript" src="./web.js"></script>
+    </body>
+</html>
